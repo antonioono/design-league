@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -881,4 +881,134 @@ body article ul li:before {
 body article blockquote {
   padding-left: 1.5em;
   border-left: 1pt solid #ff6000;
+}
+
+@-webkit-keyframes fade-in {
+  /* line 4, ../sass/_animation.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 8, ../sass/_animation.scss */
+  50% {
+    opacity: 0;
+  }
+
+  /* line 12, ../sass/_animation.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-photo {
+  /* line 18, ../sass/_animation.scss */
+  0% {
+    -webkit-filter: grayscale(0.01);
+    opacity: 1;
+  }
+
+  /* line 23, ../sass/_animation.scss */
+  50% {
+    -webkit-filter: grayscale(0.01);
+    opacity: 1;
+  }
+
+  /* line 28, ../sass/_animation.scss */
+  100% {
+    -webkit-filter: grayscale(1);
+    opacity: .125;
+  }
+}
+
+@-webkit-keyframes fade-in-orange {
+  /* line 35, ../sass/_animation.scss */
+  0% {
+    background-color: white;
+  }
+
+  /* line 39, ../sass/_animation.scss */
+  50% {
+    background-color: white;
+  }
+
+  /* line 43, ../sass/_animation.scss */
+  100% {
+    background-color: #bf4900;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  /* line 49, ../sass/_animation.scss */
+  0% {
+    top: 5em;
+    opacity: 0;
+  }
+
+  /* line 54, ../sass/_animation.scss */
+  75% {
+    top: 5em;
+    opacity: 0;
+  }
+
+  /* line 59, ../sass/_animation.scss */
+  95% {
+    top: -.125em;
+    opacity: 1;
+  }
+
+  /* line 64, ../sass/_animation.scss */
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes slide-down {
+  /* line 70, ../sass/_animation.scss */
+  0% {
+    top: -1em;
+    opacity: 0;
+  }
+
+  /* line 75, ../sass/_animation.scss */
+  75% {
+    top: -1em;
+    opacity: 0;
+  }
+
+  /* line 80, ../sass/_animation.scss */
+  95% {
+    top: .5em;
+    opacity: 1;
+  }
+
+  /* line 85, ../sass/_animation.scss */
+  100% {
+    top: 0;
+  }
+}
+
+/* line 98, ../sass/_animation.scss */
+body > header h2 {
+  -webkit-animation: fade-in 4s;
+}
+/* line 104, ../sass/_animation.scss */
+body > header h1 a {
+  position: relative;
+  -webkit-animation: slide-up 2s;
+}
+
+/* line 111, ../sass/_animation.scss */
+nav {
+  -webkit-animation: fade-in 4s;
+}
+
+/* line 116, ../sass/_animation.scss */
+form {
+  -webkit-animation: fade-in 4s;
+}
+
+/* line 120, ../sass/_animation.scss */
+.content article {
+  position: relative;
+  -webkit-animation: slide-up 2s;
 }
