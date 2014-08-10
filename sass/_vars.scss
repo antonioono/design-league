@@ -1,0 +1,69 @@
+$accent: rgba(255,96,0,1);
+$dark-accent: rgba(191,73,0,1);
+$light-accent: rgba(255,224,200,1);
+$type-color: #222;
+$light: #aaa;
+$med-light: #ccc;
+$very-light: #f0f0f0;
+
+$small: .75em;
+$leading: 1.5rem;
+$rel-leading: 1.5em;
+
+$columns: 12;
+$gutter: (100% / $columns) / 4; // gutters 1/4 of col
+$gutters: $columns - 1;
+$col: (100% / $columns) - $gutter;
+$col2: $col * ($columns / 2) + $gutter * ($columns / 3);
+$col3: $col * ($columns / 3) + $gutter * ($columns / 6);
+$col4: $col * $columns + $gutter * $columns;
+
+$breakpoint1: 32em;
+$breakpoint2: 48em;
+$breakpoint3: 84em;
+$breakpoint4: 848em;
+
+$vert-margin1: $leading;
+$vert-margin2: $leading * 2;
+$vert-margin3: $leading * 4;
+
+@mixin small-caps($size: 1em) {
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    font-size: $size;
+}
+
+@mixin small-shadow() {
+    box-shadow: 0 0 .25em rgba(0,0,0,.5);
+}
+
+@mixin fullwidth($offset) {
+    margin-left: -$offset !important;
+    width: 100% + ($offset * 2) !important;
+}
+
+@mixin hang-right($offset) {
+    margin-left: 0 !important;
+    width: 100% + $offset !important;
+}
+
+@mixin articleWidth($offset) {
+    padding-left: $offset;
+    padding-right: $offset;
+}
+
+@mixin contentPosition() {
+    @include articleWidth($gutter + $col);
+
+    @media screen and (min-width: $breakpoint1) {
+        @include articleWidth($gutter * 3 + $col * 2);
+    }
+
+    @media screen and (min-width: $breakpoint2) {
+        @include articleWidth($gutter * 4 + $col * 3);
+    }
+
+    @media screen and (min-width: $breakpoint4) {
+        @include articleWidth($gutter * 5 + $col * 4);
+    }
+}

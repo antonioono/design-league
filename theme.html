@@ -1,0 +1,261 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>{Title}</title>
+	<meta name="description" content="{MetaDescription}">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+	<link href="https://dl.dropboxusercontent.com/u/17644651/Design%20League/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="https://dl.dropboxusercontent.com/u/17644651/Design%20League/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link rel="icon" href="https://dl.dropboxusercontent.com/u/17644651/Design%20League/images/favicon.ico">
+	<!-- OPEN GRAPH -->	
+	
+	<meta property="og:site_name" content="{Title}">
+	
+	{block:PermalinkPage}
+	
+		<meta property="og:url" content="{Permalink}">
+		<meta property="og:type" content="article">
+	
+			{block:Posts}
+				{block:Text}
+					{block:Title}<meta property="og:title" content="{PlaintextTitle}">{/block:Title}
+					<meta property="og:description" content="{PlaintextBody}">
+				{/block:Text}
+	
+				{block:Photo}
+					<meta property="og:image" content="{PhotoURL-500}">
+					{block:Caption}<meta property="og:description" content="{PlaintextCaption}">{/block:Caption}
+				{/block:Photo}
+	
+				{block:Photoset}
+					{block:Photos}
+					<meta property="og:image" content="{PhotoURL-500}">
+					{/block:Photos}
+					{block:Caption}<meta property="og:description" content="{PlaintextCaption}">{/block:Caption}
+				{/block:Photoset}
+	
+				{block:Quote}
+					<meta property="og:title" content="{PlaintextQuote}">
+					<meta property="og:description" content="{PlaintextSource}">
+					<meta property="og:image" content="{PortraitURL-64}">
+				{/block:Quote}
+	
+				{block:Link}
+					<meta property="og:title" content="{PlaintextName}">
+					<meta property="og:description" content="{PlaintextDescription}">
+					<meta property="og:image" content="{PortraitURL-64}">
+				{/block:Link}
+	
+				{block:Chat}
+					<meta property="og:title" content="{PlaintextTitle}">
+					<meta property="og:description" content="{block:Lines}{block:Label}{Label}: {/block:Label}{Line} &bull; {/block:Lines}">
+					<meta property="og:image" content="{PortraitURL-64}">
+				{/block:Chat}
+	
+				{block:Audio}
+					<meta property="og:title" content="{block:Artist}{Artist} - {/block:Artist}{block:TrackName}{TrackName}{/block:TrackName}">
+					<meta property="og:description" content="{PlaintextCaption}">
+					{block:AlbumArt}<meta property="og:image" content="{AlbumArtURL}">{/block:AlbumArt}
+				{/block:Audio}
+	
+				{block:Video}
+					{block:Caption}<meta property="og:description" content="{PlaintextCaption}">{/block:Caption}
+				{/block:Video}
+	
+				{block:Answer}
+					<meta property="og:title" content="{PlaintextQuestion}">
+					<meta property="og:description" content="{PlaintextAnswer}">
+					<meta property="og:image" content="{PortraitURL-64}">
+				{/block:Answer}
+	
+			{/block:Posts}
+	
+	{/block:PermalinkPage}
+	
+	{block:IndexPage}
+			<meta property="og:title" content="{Title}">
+			<meta property="og:type" content="blog">
+			<meta property="og:description" content="{MetaDescription}">
+			<meta property="og:image" content="{PortraitURL-64}">
+	{/block:IndexPage}
+	
+	<!-- END OF OPEN GRAPH -->
+	
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+	
+	<script>
+		// var toggle = document.getElementsByClassName("toggle");
+		// for (i in toggle) {
+		// 	toggle[i].click = function() {
+		// 		var classes = gallery.className;
+		// 		toggle.[i].setAttribute("class", classes + "open");
+		// 	}
+		// 	open[i].click = function() {
+		// 		open.[i].setAttribute("class", "open");
+		// 	}
+		// }
+		// 
+		// var open = document.getElementsByClassName("open");
+		// for (i in open) {
+		// 	open[i].click = function() {
+		// 		open.[i].setAttribute("class", "open");
+		// 	}
+		// }
+
+	</script>
+	
+</head>
+<body class="{block:IndexPage}index{/block:IndexPage}">
+	<header>
+		<div class="bg"></div>
+		<div class="contents">
+			<h2>{Description}</h2>
+			<nav>
+				<ul class="pages">
+				{block:Pages}
+					<li><a href="{URL}">{Label}</a></li>
+				{/block:Pages}
+				</ul>
+			</nav>
+			<h1>
+				<a href="/">{Title}</a>
+			</h1>
+			<form id="search-form" class="search" method="get" action="/search">
+				<input type="text" name="q" placeholder="Search"/>
+			</form>
+		</div>
+	</header>
+	<section class="content">
+		{block:Posts}
+		<article id="post-{postID}" class="post {block:Text}text {/block:Text}{block:Photo}photo {/block:Photo}{block:Photoset}photoset {/block:Photoset}{block:Quote}quote {/block:Quote}{block:Link}link {/block:Link}{block:Chat}chat {/block:Chat}{block:Video}video {/block:Video}{block:Audio}audio {/block:Audio}{block:Answer}answer {/block:Answer}{block:RebloggedFrom}reblog {/block:RebloggedFrom} {block:Tags}tag_{URLSafeTag} {/block:Tags}">
+			<header>
+				<author>
+					<a href="{PostAuthorURL}" style="background-image: url('{PostAuthorPortraitURL-96}')">
+						{PostAuthorName}
+					</a>
+				</author>
+				{block:Date}<time><a href="{Permalink}">{TimeAgo}</a></time>{/block:Date}
+				{block:Text}
+				{block:Title}<h1><a href="{Permalink}">{Title}</a></h1>{/block:Title}
+				{/block:Text}
+			</header>
+
+				{block:Photo}
+				<figure>
+					{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+					{block:Caption}<figcaption class="copy">
+						{Caption}
+					</figcaption>{/block:Caption}
+				</figure>
+				{/block:Photo}
+				
+				{block:Photoset}
+				<figure>
+					<section class="photos">
+						{block:Photos}
+						<figure>
+							{LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}">{LinkCloseTag}
+							{block:Caption}<figcaption class="copy">
+								{Caption}
+							</figcaption>{/block:Caption}
+						</figure>
+						{/block:Photos}
+					</section>
+					{block:Caption}<figcaption>
+						{Caption}
+					</figcaption>{/block:Caption}
+				</figure>
+				{/block:Photoset}
+						
+				{block:Quote}
+					<div class="colored-panel">
+						<blockquote class="quote-text">{Quote}</blockquote>
+					</div>
+					<div class="post-panel">
+						<div class="quote-nipple"></div>
+						{block:Source}<div class="copy">{Source}</div>{/block:Source}
+				{/block:Quote}
+				
+				{block:Link}
+				<h1><a href="{URL}" {Target}>{Name}<span class="icon"></a></h1>
+				{block:Description}{Description}{/block:Description}
+				{/block:Link}
+				
+				{block:Chat}
+				{block:Title}
+				<h1>{Title}</h1>
+				{/block:Title}
+				<ul class="chat">
+					{block:Lines}
+					<li class="{Alt} user_{UserNumber}">
+						{block:Label}
+						<span class="speaker">{Label}</span>
+						{/block:Label}
+						<span class="says">{Line}</span>
+					</li>
+					{/block:Lines}
+				</ul>
+				{/block:Chat}
+				
+				{block:Video}
+				<figure>
+						{Video-500}
+						{block:Caption}<figcaption class="copy">{Caption}</figcaption>{/block:Caption}
+				</figure>
+				{/block:Video}
+				
+				{block:Audio}
+				<figure>
+					{block:AudioPlayer}
+						<div class="album-art">{block:AlbumArt}<img class="album-art" src="{AlbumArtUrl}" alt=""/>{/block:AlbumArt}</div>
+				
+							{AudioPlayerWhite}
+						<ul class="audio-meta">
+							<li class="plays"><span class="count">{FormattedPlayCount}</span> {lang:Plays}</li>
+							<li class="track-info">{block:TrackName}<span class="title">{TrackName}</span>{/block:TrackName}{block:Artist}<span class="artist">{Artist}</span>{/block:Artist}</li>
+						</ul>
+						{block:ExternalAudio}
+						<a class="download" href="{ExternalAudioURL}" title="Download External Audio">Download External Audio</a>
+						{/block:ExternalAudio}
+					</div>
+					{/block:AudioPlayer}
+					{block:AudioEmbed}<div class="spotify">{AudioEmbed-500}</div>{/block:AudioEmbed}
+					<div class="post-panel">
+					{block:Caption}<figcaption class="copy">{Caption}</figcaption>{/block:Caption}
+				</figure>
+				{/block:Audio}
+				
+				{block:Answer}
+				<section class="question">
+					{Question}
+					<author>{Asker}</author>
+				</section>
+				<section class="answer">
+					{Answer}
+				</section>
+				{/block:Answer}
+			{Body}
+			<footer>
+				<ul class="meta">
+					{block:HasTags}<li class="tags toggle">
+						<h2>Tags</h2>
+						<ul>
+							{block:Tags}
+								<li>
+									<a href="{TagURL}">{Tag}</a>
+								</li>
+							{/block:Tags}
+						</ul>
+					</li>{/block:HasTags}
+					{block:PostNotes}<li class="notes toggle">
+						<h2>Notes</h2>
+						{PostNotes}
+					</li>{/block:PostNotes}
+				</ul>
+			</footer>
+		</article>
+		{/block:Posts}
+	</section>
+</body>
+</html>
