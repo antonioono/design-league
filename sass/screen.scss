@@ -1,6 +1,4 @@
 @import "compass/reset";
 @import "compass/css3";
-@import "_vars.scss";
-@import "_type.scss";
-@import "_base.scss";
-@import "_animation.scss";
+@import "./_globals/_globals.scss";
+@import "./_layout/_layout.scss";

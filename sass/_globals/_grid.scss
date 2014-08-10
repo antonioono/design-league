@@ -7,8 +7,8 @@ $med-light: #ccc;
 $very-light: #f0f0f0;
 
 $small: .75em;
-$leading: 1.5rem;
-$rel-leading: 1.5em;
+$leading: 1.5em;
+$baseline: 1.5rem;
 
 $columns: 12;
 $gutter: (100% / $columns) / 4; // gutters 1/4 of col
@@ -23,15 +23,10 @@ $breakpoint2: 48em;
 $breakpoint3: 84em;
 $breakpoint4: 848em;
 
-$vert-margin1: $leading;
-$vert-margin2: $leading * 2;
-$vert-margin3: $leading * 4;
+$vert-margin1: $baseline;
+$vert-margin2: $baseline * 2;
+$vert-margin3: $baseline * 4;
 
-@mixin small-caps($size: 1em) {
-    text-transform: uppercase;
-    letter-spacing: .125em;
-    font-size: $size;
-}
 
 @mixin small-shadow() {
     box-shadow: 0 0 .25em rgba(0,0,0,.5);
@@ -48,8 +43,8 @@ $vert-margin3: $leading * 4;
 }
 
 @mixin articleWidth($offset) {
-    padding-left: $offset;
-    padding-right: $offset;
+    margin-left: $offset;
+    margin-right: $offset;
 }
 
 @mixin contentPosition() {

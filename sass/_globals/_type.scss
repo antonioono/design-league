@@ -1,0 +1,81 @@
+@import "./_font-face.scss";
+
+$hairline:      "tazhair21";
+$ultralight:    "tazultralight";
+$light-font:    "tazlight";
+$semilight:     "tazsemilight";
+$regular:       "tazregular";
+$bold:          "tazbold";
+$italic:        "tazitalic";
+
+@mixin small-caps($size: 1em) {
+    text-transform: uppercase;
+    letter-spacing: .125em;
+    font-size: $size;
+}
+
+body {
+    font-family: $semilight;
+    font-size: 12pt;
+    line-height: 1.5em;
+    
+    @media screen and (min-width: $breakpoint1) {
+        font-size: 14pt;
+        line-height: 1.5em;
+    }
+    
+    @media screen and (min-width: $breakpoint3) {
+        font-size: 16pt;
+        line-height: 1.5em;
+    }
+    
+    em {
+        font-family: $italic;
+        font-style: italic;
+    }
+    
+    strong {
+        font-family: $bold;
+        font-weight: bold;
+    }
+    
+    .small-caps {
+        @include small-caps;
+        font-size: .75em;
+    }
+    
+    header {
+        > h1, > .contents > h1 {
+            font-size: 3em;
+            line-height: 1em;
+            font-family: $ultralight;
+            text-transform: lowercase;
+        
+            a {
+                &:hover {
+                    border: none !important;
+                }
+            }
+                    
+            @media screen and (min-width: $breakpoint2) {
+                font-family: $hairline;
+                font-size: 4em;
+            }
+        }
+        
+        > h2,  > .contents > h2 {
+            font-family: $regular;
+        }
+    }
+    
+    
+    nav ul li {
+        font-size: 12pt;
+        line-height: 1.25em;
+        
+        h1 {
+            @include small-caps(.75em);
+            font-family: $regular;
+        }
+    }
+}

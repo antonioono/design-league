@@ -167,24 +167,42 @@
     <header>
         <div class="bg"></div>
         <div class="contents">
-            <h2>The official organization for Carnegie Mellon design students.</h2>
+            <h1 class="title">
+                <a href="/">
+                    <span class="phrase">
+                        <span class="word">Carnegie</span>
+                        <span class="word">Mellon</span>
+                    <span class="phrase">
+                        <span class="word">Design</span>
+                        <span class="word">League</span>
+                    </span>
+                </a>
+            </h1>
             <nav>
                 <ul class="pages">
-
-                    <li><a href="/design-at-work">Design at Work</a></li>
-
-                    <li><a href="/about">About</a></li>
-
-                    <li><a href="/portfolios">Student Portfolios</a></li>
-
+                    <li>
+                        <a href="/about">
+                            <h1>About</h1>
+                            <p>The official organization for Carnegie Mellon design students.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/design-at-work">
+                            <h1>Design at Work</h1>
+                            <p>Carnegie Mellon Design students share their internship experiences.</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/portfolios">
+                            <h1>Student Portfolios</h1>
+                            <p>View work from current undergradutate and graduate students</p>
+                        </a>
+                    </li>
                 </ul>
+                <form id="search-form" class="search" method="get" action="/search">
+                    <input type="text" name="q" placeholder="Search"/>
+                </form>
             </nav>
-            <h1>
-                <a href="/">CMU Design League</a>
-            </h1>
-            <form id="search-form" class="search" method="get" action="/search">
-                <input type="text" name="q" placeholder="Search"/>
-            </form>
         </div>
     </header>
     <section class="content">

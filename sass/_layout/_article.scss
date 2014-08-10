@@ -1,0 +1,246 @@
+body {
+    article {
+        padding-top:    $vert-margin2;
+        padding-bottom: $vert-margin2;
+        @include contentPosition;
+        
+        @media screen and (min-width: $breakpoint2) {
+            padding-top:    $vert-margin3;
+            padding-bottom: $vert-margin3;
+        }
+        
+        // &:nth-child(odd) {
+        //     background-color: $very-light;
+        // }
+        // 
+        // &:nth-child(even) {
+        //     background-color: #fff;
+        // }
+    
+        h1 {
+            margin-bottom: $leading / 2;
+            
+            @media screen and (min-width: $breakpoint1) {
+                width: 100% + $col + $gutter;
+            }
+            @media screen and (min-width: $breakpoint2) {
+                width: 100% + $col2;
+            }
+            @media screen and (min-width: $breakpoint3) {
+                width: 100% + $col2;
+            }
+        }
+    
+        header {
+                               
+            time {
+                @include small-caps(.75em);
+    
+                @media screen and (max-width: $breakpoint1) {
+                    margin-left: 3.5em;
+                }
+                @media screen and (min-width: $breakpoint1) {
+                    position: relative;
+                    top: -$leading/3;
+                }
+                
+                a {
+                    color: $light;
+                    &:hover {
+                        color: $accent;
+                    }
+                }
+            }
+            
+            h1 {
+                @media screen and (max-width: $breakpoint1) {
+                    margin-top: $leading/2;
+                }
+            }
+            
+            author {
+                position: relative;
+                top: -.3333em;
+    
+                a {
+                    background-size: 100% 100%;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    height: 2em;
+                    width:  2em;
+                    text-indent: -9999em;
+                    border-radius: 50%;
+                    border: 1pt $light solid;
+                    position: absolute;
+    
+                    &:hover {
+                        border-color: $accent;
+                    }
+                }
+    
+                @media screen and (min-width: $breakpoint1) {
+                    top: $leading*1.166667;
+    
+                    a {
+                        left:  -4em;
+                        height: 3em;
+                        width:  3em;
+                    }
+                }
+    
+                @media screen and (min-width: $breakpoint2) {
+                        top: $leading*1.33333;
+    
+                    a {
+                        // left:   -6em;
+                        // width:   4em;
+                        // height:  4em;
+                    }
+                }
+                
+                @media screen and (min-width: $breakpoint3) {
+                    top: $leading*1.5;
+                
+                    a {
+                        // left:   -6.5em;
+                        // width:   4.5em;
+                        // height:  4.5em;
+                    }
+                }
+            }
+        }
+    
+        footer {
+    
+            ul.meta {
+                color: $light;
+                position: relative;
+    
+                a {
+                    color: $light;
+                    &:hover { color: $accent; }
+                }
+    
+                li:before {
+                    content: none;
+                }
+    
+                > li {
+                    margin-top: $leading / 2;
+                    // margin-left: $col*2 + $gutter*3;
+                    display: block;
+                    
+                    @media screen and (min-width: $breakpoint1) {
+                        h2 {
+                            position: absolute;
+                            left: 0;
+                        }
+                    }
+                    
+                    @media screen and (min-width: $breakpoint2) {
+                        margin-left: 0;
+                        
+                        h2 {
+                            width: 5em;
+                            left: -5.75em;
+                            text-align: right
+                        }
+                    }
+    
+                    h2 {
+                        @include small-caps(.75em);
+                        color: $med-light;
+                    }
+    
+                    &.tags {
+                        ul {
+                            li {
+                                text-transform: lowercase;
+                                display: inline-block;
+                                padding-right: .5em;
+                            }
+                        }
+                    }
+    
+                    &.notes {
+                        li {
+                            display: block;
+                            color: $med-light;
+                            margin-bottom: $leading / 2;
+                            a {
+                                color: $light;
+                                &:hover { color: $accent; }
+                            }
+                            img {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        > figure {
+            padding-bottom: 0;
+    
+            figcaption {
+                margin-bottom: $leading;
+            }
+    
+            iframe {
+                width: 100% + $gutter * 2 !important;
+                margin-left: -$gutter;
+                height: auto  !important;
+            }
+        }
+    
+        img {
+            height: auto !important; // many images already in the blog have a hardcoded height
+        }
+    
+        &.text  img,
+        &.photo img, 
+        &.video img,
+        &.audio img,
+        &.photoset img {
+    
+            @media screen and (max-width: $breakpoint1) {
+                @include fullwidth($gutter * 2 + $col);
+            }
+    
+            @media screen and (min-width: $breakpoint1) {
+                width: 100% !important;
+            }
+    
+            @media screen and (min-width: $breakpoint2) {
+                @include hang-right($gutter * 4 + $col * 3);
+            }
+    
+            @media screen and (min-width: $breakpoint3) {
+                @include hang-right($gutter * 4 + $col * 3);
+            }
+        }
+    
+        ul {
+            list-style-type: none;
+    
+            li {
+                &:before {
+                    content: "\2015";
+                    color: $light;
+                    position: absolute;
+                    margin-left: -1.5em;
+                    
+                    @media screen and (max-width: $breakpoint1) {
+                        margin-left: -1em;
+                    }
+                }
+            }
+        }
+    
+        blockquote {
+            padding-left: 1.5em;
+            border-left: 1pt solid $accent;
+        }
+    }
+}

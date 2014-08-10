@@ -1,0 +1,33 @@
+body {
+    background: $very-light;
+    text-rendering: optimizelegibility;
+    overflow-x: hidden; // HACK
+    // width: 100vw;
+
+    a {
+        color: $accent;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-accent;
+        }
+        
+    }
+
+    p,
+    article > ul li,
+    article > ol li {
+        padding-bottom: $leading / 2;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    
+    .content {
+        position: relative;
+        z-index: 100;
+        background-color: $very-light;
+    }
+
+}
