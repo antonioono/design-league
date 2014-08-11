@@ -106,30 +106,3 @@
     font-style: normal;
 
 }
-
-$hairline: "tazhair21";
-$ultralight: "tazultralight";
-$light-font: "tazlight";
-$semilight: "tazsemilight";
-$regular: "tazregular";
-$bold: "tazbold";
-$italic: "tazitalic";
-
-body {
-    font-family: $semilight;
-    
-    em {
-        font-family: $italic;
-        font-style: italic;
-    }
-    
-    strong {
-        font-family: $bold;
-        font-weight: bold;
-    }
-    
-    .small-caps {
-        @include small-caps;
-        font-size: .75em;
-    }
-}
