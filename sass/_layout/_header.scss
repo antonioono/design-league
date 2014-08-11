@@ -1,6 +1,12 @@
 body {
     > header,
     > header .contents { 
+        @media screen and (min-width: $breakpoint1) {
+            nav {
+                margin-top: $baseline * 3;
+            }
+        }
+        
         // height: 9 * $leading;
         // // padding-bottom: $vert-margin1;
         // 
@@ -20,9 +26,12 @@ body {
     
     &.index > header,
     &.index > header .contents { // Main header, index
-        nav {
-            margin-top: 10em;
+        @media screen and (min-width: $breakpoint1) {
+            nav {
+                margin-top: $baseline * 8;
+            }
         }
+
         // min-height: 15 * $leading;
         // height: 75vh;
     
@@ -94,14 +103,19 @@ body {
                 position: relative;              
                 white-space: nowrap;
                 span.phrase { display: block; }
+                
+                $logoHeight: .4em;
+                background-image: url('../images/logo-breakpoint3.png');
+                background-repeat: no-repeat;
+                background-size: $logoHeight;
+                padding-top: $logoHeight + .25em;
             
-                @media screen and (min-width: $breakpoint1) {                    
-                    $logoWidth: 24pt;
-                    $offset: $logoWidth + 24pt;
-                    background-image: url('../images/logo-breakpoint3.png');
-                    background-repeat: no-repeat;
+                @media screen and (min-width: $breakpoint1) {
+                    $logoWidth: .5em;
                     background-size: $logoWidth;
-                    background-position: 0 .333em;
+                    $offset: $logoWidth + .25em;    
+                    padding-top: 0;                  
+                    background-position: 0 .1875em;
                     padding-left: $offset;
                     left: -$offset;
                 }
@@ -203,6 +217,10 @@ body {
                     display: inline-block;
                     vertical-align: top;
                     width: ($col*4 - 1%) + $gutter*3;
+                }
+                
+                @media screen and (min-width: $breakpoint3) {
+                    width: ($col*3 - 1%) + $gutter*2;
                 }
                 
                 p {
