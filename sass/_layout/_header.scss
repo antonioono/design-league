@@ -1,6 +1,7 @@
 body {
     > header,
     > header .contents { 
+
         @media screen and (min-width: $breakpoint1) {
             nav {
                 margin-top: $baseline * 3;
@@ -50,35 +51,26 @@ body {
     }
     
     > header { // Main header, all pages
-        background: $accent;
-        position: relative;
+        // background: $accent;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        height: 100%;
+        
+        &:hover {
+            // background-color: $accent;
+            // 
+            // a {
+            //     color: white !important;
+            // }
+        }
         
         a {
+            color: $accent !important;
+            
             &:hover {
                 color: white;
                 border-bottom: 1px white solid;
-            }
-        }
-    
-        .bg {
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            background: url('../images/cover-photo.png') no-repeat;
-            background-size: cover;
-            background-position: center middle;
-            padding-bottom: $leading;
-            opacity: .25;
-    
-            @media screen and (orientation:portrait) {
-            }
-    
-            @media screen and (min-width: $breakpoint2) {
-            }
-            
-            @media screen and (min-width: $breakpoint3) {
             }
         }
     
@@ -102,7 +94,7 @@ body {
                 @include contentPosition;  
                 position: relative;              
                 white-space: nowrap;
-                span.phrase { display: block; }
+                // span.phrase { display: block; }
                 
                 $logoHeight: .4em;
                 background-image: url('../images/logo-breakpoint3.png');
