@@ -8,6 +8,8 @@ $regular:       "tazregular";
 $bold:          "tazbold";
 $italic:        "tazitalic";
 
+$bodyRegular:   "BemboStd";
+
 @mixin small-caps($size: 1em) {
     text-transform: uppercase;
     letter-spacing: .125em;
@@ -15,20 +17,10 @@ $italic:        "tazitalic";
 }
 
 body {
-    font-family: $semilight;
+    font-family: $bodyRegular;
     font-size: 12pt;
     line-height: 1.5em;
-    
-    // @media screen and (min-width: $breakpoint1) {
-    //     font-size: 14pt;
-    //     line-height: 1.5em;
-    // }
-    // 
-    // @media screen and (min-width: $breakpoint3) {
-    //     font-size: 16pt;
-    //     line-height: 1.5em;
-    // }
-    // 
+
     em {
         font-family: $italic;
         font-style: italic;
