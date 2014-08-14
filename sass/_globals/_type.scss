@@ -19,16 +19,16 @@ body {
     font-size: 12pt;
     line-height: 1.5em;
     
-    @media screen and (min-width: $breakpoint1) {
-        font-size: 14pt;
-        line-height: 1.5em;
-    }
-    
-    @media screen and (min-width: $breakpoint3) {
-        font-size: 16pt;
-        line-height: 1.5em;
-    }
-    
+    // @media screen and (min-width: $breakpoint1) {
+    //     font-size: 14pt;
+    //     line-height: 1.5em;
+    // }
+    // 
+    // @media screen and (min-width: $breakpoint3) {
+    //     font-size: 16pt;
+    //     line-height: 1.5em;
+    // }
+    // 
     em {
         font-family: $italic;
         font-style: italic;
@@ -45,8 +45,8 @@ body {
     }
     
     header {
-        > h1, > .contents > h1 {
-            font-size: 3em;
+        > h1, > .contents > h1, article h1 {
+            font-size: 16.25vw;
             line-height: 1em;
             font-family: $ultralight;
             text-transform: lowercase;
@@ -59,7 +59,7 @@ body {
                     
             @media screen and (min-width: $breakpoint2) {
                 font-family: $hairline;
-                font-size: 4em;
+                font-size: 8.665vw;
             }
         }
         

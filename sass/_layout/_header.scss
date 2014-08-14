@@ -1,70 +1,23 @@
 body {
-    > header,
-    > header .contents { 
 
-        @media screen and (min-width: $breakpoint1) {
-            nav {
-                margin-top: $baseline * 3;
-            }
-        }
-        
-        // height: 9 * $leading;
-        // // padding-bottom: $vert-margin1;
-        // 
-        // @media screen and (min-width: $breakpoint1) {
-        //     // padding-bottom: $vert-margin2;
-        //     height: 9 * $leading;
-        // }
-        // 
-        // @media screen and (min-width: $breakpoint2) {
-        //     height: 12 * $leading;
-        // }
-        // 
-        // @media screen and (min-width: $breakpoint3) {
-        //     height: 15 * $leading;
-        // }
-    }
-    
-    &.index > header,
-    &.index > header .contents { // Main header, index
-        @media screen and (min-width: $breakpoint1) {
-            nav {
-                margin-top: $baseline * 8;
-            }
-        }
-
-        // min-height: 15 * $leading;
-        // height: 75vh;
-    
-        // @media screen and (min-width: $breakpoint1) {
-        //     padding-bottom: $vert-margin2;
-        //     height: 18 * $leading;
-        // }
-        // 
-        // @media screen and (min-width: $breakpoint2) {
-        //     height: 21 * $leading;
-        // }
-        // 
-        // @media screen and (min-width: $breakpoint3) {
-        //     height: 21 * $leading;
-        // }
-    }
-    
-    > header { // Main header, all pages
-        // background: $accent;
-        position: fixed;
+    > header, nav {
         z-index: 2;
-        top: 0;
-        height: 100%;
         
-        &:hover {
-            // background-color: $accent;
-            // 
-            // a {
-            //     color: white !important;
-            // }
+        @media screen and (min-width: $breakpoint1) {
+            opacity: .25;
+            position: fixed;
+            @include transition(opacity .25s ease-in-out);
         }
         
+        &.rollover {
+            opacity: 1;
+        }
+    }
+    
+    > header { 
+        height: 100%;
+        top: 50%;
+
         a {
             color: $accent !important;
             
@@ -73,142 +26,150 @@ body {
                 border-bottom: 1px white solid;
             }
         }
-    
-        .contents {
-            // position: fixed;
-            top: 0;
-            width: 100%;
-            padding: $baseline 0;
+
+        a, input {
+            position: relative;
+            z-index: 100;
+            color: white;
+        }
+        
+        h1, h2 {
+            z-index: 2;
+        }
+        
+        h1.title {
+            position: relative;              
+            white-space: nowrap;            
+            $logoHeight: .4em;
+            background-image: url('../images/logo-breakpoint3.png');
+            background-repeat: no-repeat;
+            background-size: $logoHeight;
+            padding-top: $logoHeight + .25em;
             
-            a, input {
-                position: relative;
-                z-index: 100;
-                color: white;
+            span.phrase { display: block; }
+        
+            @media screen and (min-width: $breakpoint1) {
+                $logoWidth: .5em;
+                background-size: $logoWidth;
+                $offset: $logoWidth + .25em;    
+                padding-top: 0;                  
+                background-position: 0 .1875em;
+                padding-left: $offset;
+                left: -$offset;
             }
             
-            h1, h2 {
-                z-index: 2;
+            @media screen and (min-width: $breakpoint2) {
+                span.phrase { display: inline; }
             }
+        }
+        
+        h2 {
+            font-size: 1em;
+            line-height: $leading;
+            color: rgba(255,255,255,.75);
+            @include contentPosition;
             
-            h1.title {
-                @include contentPosition;  
-                position: relative;              
+            @media screen and (max-width: $breakpoint1) {
+                display: none;
+            }
+        
+            @media screen and (min-width: $breakpoint3) {
                 white-space: nowrap;
-                // span.phrase { display: block; }
-                
-                $logoHeight: .4em;
-                background-image: url('../images/logo-breakpoint3.png');
-                background-repeat: no-repeat;
-                background-size: $logoHeight;
-                padding-top: $logoHeight + .25em;
-            
-                @media screen and (min-width: $breakpoint1) {
-                    $logoWidth: .5em;
-                    background-size: $logoWidth;
-                    $offset: $logoWidth + .25em;    
-                    padding-top: 0;                  
-                    background-position: 0 .1875em;
-                    padding-left: $offset;
-                    left: -$offset;
-                }
+            }
+        }
+        
+        .search {
+            margin-top: $leading - .33333em;
+        
+            @media screen and (max-width: $breakpoint1) {
+                display: none;
             }
             
-            h2 {
-                font-size: 1em;
-                line-height: $leading;
-                color: rgba(255,255,255,.75);
+            @media screen and (max-width: $breakpoint2) {
                 @include contentPosition;
-                
-                @media screen and (max-width: $breakpoint1) {
-                    display: none;
-                }
-            
-                @media screen and (min-width: $breakpoint3) {
-                    white-space: nowrap;
-                }
             }
             
-            .search {
-                margin-top: $leading - .33333em;
-            
-                @media screen and (max-width: $breakpoint1) {
-                    display: none;
-                }
-                
-                @media screen and (max-width: $breakpoint2) {
-                    @include contentPosition;
-                }
-                
-                @media screen and (min-width: $breakpoint2) {
-                    position: absolute;
-                    top: $leading;
-                    right: $gutter;
-                }
-            
-                input {
-                    background: none;
-                    padding: 0;
-                    margin: 0;
-                    border: 0;
-                    outline: none;
-                    -webkit-appearance: none;
-            
-                    width: 9em;
-                    border-bottom: 1pt white solid;
-                    font-size: 1em;
+            @media screen and (min-width: $breakpoint2) {
+                position: absolute;
+                top: $leading;
+                right: $gutter;
+            }
+        
+            input {
+                background: none;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                outline: none;
+                -webkit-appearance: none;
+        
+                width: 9em;
+                border-bottom: 1pt white solid;
+                font-size: 1em;
+                font-family: $semilight;
+                color: white;
+        
+                ::-webkit-input-placeholder
+                   ::-moz-input-placeholder
+                    ::-ms-input-placeholder
+                        ::input-placeholder {
+                    opacity: 1;
                     font-family: $semilight;
-                    color: white;
-            
-                    ::-webkit-input-placeholder
-                       ::-moz-input-placeholder
-                        ::-ms-input-placeholder
-                            ::input-placeholder {
-                        opacity: 1;
-                        font-family: $semilight;
-                    }
-            
-                    @include transition-property(all);
-                    @include transition-duration(.25s);
-                    @include transition-timing-function(cubic-bezier(1, 0, 0, 1));
-            
-                    &:hover {
-                        width: 10em;
-                    }
-            
-                    &:focus {
-                        border-bottom-color: $accent;
-                        width: 15em;
-                    }
-            
-                    @media screen and (min-width: $breakpoint2) {
-                        width: 6em;
-                        &:hover { width: 7.5em; }
-                        &:focus { width: 10em; }
-                    }
-                    @media screen and (min-width: $breakpoint3) {
-                        width: 9em;
-                        &:hover { width: 10em; }
-                        &:focus { width: 15em; }
-                    }
+                }
+        
+                @include transition-property(all);
+                @include transition-duration(.25s);
+                @include transition-timing-function(cubic-bezier(1, 0, 0, 1));
+        
+                &:hover {
+                    width: 10em;
+                }
+        
+                &:focus {
+                    border-bottom-color: $accent;
+                    width: 15em;
+                }
+        
+                @media screen and (min-width: $breakpoint2) {
+                    width: 6em;
+                    &:hover { width: 7.5em; }
+                    &:focus { width: 10em; }
+                }
+                @media screen and (min-width: $breakpoint3) {
+                    width: 9em;
+                    &:hover { width: 10em; }
+                    &:focus { width: 15em; }
                 }
             }
         }
     }
     
     nav {
-        @include contentPosition;
-        margin-right: 0 !important;
-
+        top: 0;
+        margin-left: $marginLeft0;
+        
+        @media screen and (min-width: $breakpoint2) {
+            margin-left: $marginLeft2;
+        }
+        
+        @media screen and (min-width: $breakpoint3) {
+            margin-left: $marginLeft3;
+        }
+        
         ul {
     
             li {
                 margin-right: $gutter;
-                margin-top: $leading;
+                margin-top: $leading/4;
                 
                 @media screen and (min-width: $breakpoint1) {
                     display: inline-block;
                     vertical-align: top;
-                    width: ($col*4 - 1%) + $gutter*3;
+                    width: ($col*4) + $gutter*3;
+                    
+                    &:last-child {
+                        width: ($col*4) + $gutter*2.25;
+                    }
                 }
                 
                 @media screen and (min-width: $breakpoint3) {
@@ -217,7 +178,7 @@ body {
                 
                 p {
                     opacity: .75;
-
+    
                     &:hover {
                        opacity: 1;
                     }
@@ -225,5 +186,4 @@ body {
             }
         }
     }
-
 }

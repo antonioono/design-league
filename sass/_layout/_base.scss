@@ -1,8 +1,7 @@
 body {
     background: $very-light;
     text-rendering: optimizelegibility;
-    overflow-x: hidden; // HACK
-    // width: 100vw;
+    overflow-x: hidden;
 
     a {
         color: $accent;
@@ -25,10 +24,18 @@ body {
     }
     
     .content {
-        position: relative;
         z-index: 1;
-        background-color: $very-light;
-        margin-top: $baseline * 12;
+        position: relative;
+        
+        @media screen and (min-width: $breakpoint1) {
+            top: 75vh;
+        }
+        
+        &.inactive {
+            opacity: .125;
+        }
+        
+        @include transition(opacity .25s ease-in-out);
     }
 
 }

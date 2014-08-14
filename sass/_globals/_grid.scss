@@ -27,38 +27,57 @@ $vert-margin1: $baseline;
 $vert-margin2: $baseline * 2;
 $vert-margin3: $baseline * 4;
 
+$marginLeft0:  $gutter * 2 + $col;
+$marginRight0: $gutter * 2 + $col;
+
+$marginLeft1:  $gutter * 5 + $col * 4;
+$marginRight1: $gutter * 2 + $col;
+
+$marginLeft2:  $gutter * 6 + $col * 5;
+$marginRight2: $gutter * 3 + $col * 2;
+
+$marginLeft3:  $gutter * 7 + $col * 6;
+$marginRight3: $gutter * 3 + $col * 2;
 
 @mixin small-shadow() {
     box-shadow: 0 0 .25em rgba(0,0,0,.5);
 }
 
-@mixin fullwidth($offset) {
-    margin-left: -$offset !important;
-    width: 100% + ($offset * 2) !important;
-}
-
-@mixin hang-right($offset) {
-    margin-left: 0 !important;
-    width: 100% + $offset !important;
-}
-
-@mixin articleWidth($offset) {
-    margin-left: $offset;
-    margin-right: $offset;
-}
-
-@mixin contentPosition() {
-    @include articleWidth($gutter + $col);
+@mixin imageWidth() {
+    margin-left: -$marginLeft0 * 1.25;
+    width: 100% + ($marginLeft0 + $marginRight0 * 1.25);
 
     @media screen and (min-width: $breakpoint1) {
-        @include articleWidth($gutter * 3 + $col * 2);
+        margin-left: 0;
+        width: 100% + $marginRight1 * 1.76;
     }
 
     @media screen and (min-width: $breakpoint2) {
-        @include articleWidth($gutter * 4 + $col * 3);
+        margin-left: 0;
+        width: 100% + $marginRight2;
     }
 
-    @media screen and (min-width: $breakpoint4) {
-        @include articleWidth($gutter * 5 + $col * 4);
+    @media screen and (min-width: $breakpoint3) {
+        margin-left: 0;
+        width: 100% + $marginLeft3;
+    }
+}
+
+@mixin contentPosition() {
+    margin: 0 $marginLeft0;
+
+    @media screen and (min-width: $breakpoint1) {
+        margin-left: $marginLeft1;
+        margin-right: $marginRight1;
+    }
+    
+    @media screen and (min-width: $breakpoint2) {
+        margin-left: $marginLeft2;
+        margin-right: $marginRight2;
+    }
+    
+    @media screen and (min-width: $breakpoint3) {
+        margin-left: $marginLeft3;
+        margin-right: $marginRight3;
     }
 }

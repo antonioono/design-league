@@ -2,6 +2,7 @@ body {
     article {
         padding-top:    $vert-margin1;
         padding-bottom: $vert-margin1;
+        position: relative;
         @include contentPosition;
         
         @media screen and (min-width: $breakpoint2) {
@@ -13,17 +14,18 @@ body {
             margin-bottom: $baseline / 2;
             
             @media screen and (min-width: $breakpoint1) {
-                width: 100% + $col + $gutter;
+                // width: 100% + $col + $gutter;
             }
             @media screen and (min-width: $breakpoint2) {
-                width: 100% + $col2;
+                // width: 100% + $col2;
             }
             @media screen and (min-width: $breakpoint3) {
-                width: 100% + $col2;
+                // width: 100% + $col2;
             }
         }
     
         header {
+            position: relative;
                                
             time {
                 @include small-caps(.75em);
@@ -180,7 +182,7 @@ body {
             }
     
             iframe {
-                width: 100% + $gutter * 2 !important;
+                // width: 100% + $gutter * 2 !important;
                 margin-left: -$gutter;
                 height: auto  !important;
             }
@@ -195,22 +197,7 @@ body {
         &.video img,
         &.audio img,
         &.photoset img {
-    
-            @media screen and (max-width: $breakpoint1) {
-                @include fullwidth($gutter * 2 + $col);
-            }
-    
-            @media screen and (min-width: $breakpoint1) {
-                width: 100% !important;
-            }
-    
-            @media screen and (min-width: $breakpoint2) {
-                @include hang-right($gutter * 4 + $col * 3);
-            }
-    
-            @media screen and (min-width: $breakpoint3) {
-                @include hang-right($gutter * 4 + $col * 3);
-            }
+            @include imageWidth;
         }
     
         ul {
