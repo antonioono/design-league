@@ -3,7 +3,6 @@ body {
         padding-top:    $vert-margin1;
         padding-bottom: $vert-margin1;
         position: relative;
-        @include contentPosition;
         
         @media screen and (min-width: $breakpoint2) {
             padding-top:    $vert-margin2;
@@ -26,6 +25,10 @@ body {
     
         header {
             position: relative;
+            
+            @media screen and (max-width: $breakpoint2) {
+                @include contentPosition;
+            }
                                
             time {
                 @include small-caps(.75em);
@@ -47,24 +50,21 @@ body {
             }
             
             h1 {
-                @media screen and (max-width: $breakpoint1) {
-                    margin-top: $baseline/2;
-                }
             }
             
             author {
-                position: relative;
-                top: -.3333em;
+                position: absolute;
+                left: -.875em;
+                top: .55em;
     
                 a {
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                     display: inline-block;
-                    height: 2em;
-                    width:  2em;
+                    height: .666em;
+                    width:  .666em;
                     text-indent: -9999em;
                     border-radius: 50%;
-                    border: 1pt $light solid;
                     position: absolute;
     
                     &:hover {
@@ -73,27 +73,20 @@ body {
                 }
     
                 @media screen and (min-width: $breakpoint1) {
-                    top: $leading*1.166667;
     
                     a {
-                        left:  -4em;
-                        height: 3em;
-                        width:  3em;
+                        
                     }
                 }
     
                 @media screen and (min-width: $breakpoint2) {
-                        top: $leading*1.33333;
     
                     a {
-                        // left:   -6em;
-                        // width:   4em;
-                        // height:  4em;
+
                     }
                 }
                 
                 @media screen and (min-width: $breakpoint3) {
-                    top: $leading*1.5;
                 
                     a {
                         // left:   -6.5em;
@@ -103,8 +96,13 @@ body {
                 }
             }
         }
+        
+        section.body {
+            @include contentPosition;
+        }
     
         footer {
+            @include contentPosition;
     
             ul.meta {
                 color: $light;

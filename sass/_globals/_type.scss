@@ -20,6 +20,16 @@ body {
     font-family: $bodyRegular;
     font-size: 12pt;
     line-height: 1.5em;
+    
+    ::selection {
+        background: $accent;
+        color: white;
+    }
+    
+    ::-moz-selection {
+        background: $accent;
+        color: white;
+    }
 
     em {
         font-family: $italic;
@@ -37,7 +47,10 @@ body {
     }
     
     header {
-        > h1, > .contents > h1, article h1 {
+        > h1,
+        > .contents > h1,
+        h1,
+        author {
             font-size: 16.25vw;
             line-height: 1em;
             font-family: $ultralight;
@@ -60,10 +73,19 @@ body {
         }
     }
     
+    // article {
+    //     
+    //     header h1, header author {
+    //         @media screen and (min-width: $breakpoint3) {
+    //             font-size: 6em;
+    //             font-family: $ultralight;
+    //         }
+    // 
+    //     }
+    // }
+    
     
     nav ul li {
-        font-size: 12pt;
-        line-height: 1.25em;
         
         h1 {
             @include small-caps(.75em);

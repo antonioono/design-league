@@ -2,6 +2,20 @@ body {
     background: $very-light;
     text-rendering: optimizelegibility;
     overflow-x: hidden;
+    
+    &:after {
+        content: "";
+        background-image: url('../images/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: .1;
+        z-index: -2;
+    }
 
     a {
         color: $accent;
@@ -32,10 +46,11 @@ body {
         }
         
         &.inactive {
-            opacity: .125;
+            opacity: .25;
+            -webkit-filter: grayscale(1);
         }
         
-        @include transition(opacity .25s ease-in-out);
+        @include transition(all .25s ease-in-out);
     }
 
 }

@@ -15,22 +15,7 @@ body {
     }
     
     > header { 
-        height: 100%;
         top: 50%;
-        
-        &:after {
-            content: "";
-            background-image: url('../images/bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: fixed;
-            height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
-            opacity: .1;
-            z-index: -2;
-        }
 
         a {
             color: $accent !important;
@@ -160,7 +145,7 @@ body {
     
     nav {
         top: 0;
-        margin-left: $marginLeft0;
+        margin-left: $gutter;
         
         @media screen and (min-width: $breakpoint2) {
             margin-left: $marginLeft2;
@@ -182,12 +167,12 @@ body {
                     width: ($col*4) + $gutter*3;
                     
                     &:last-child {
-                        width: ($col*4) + $gutter*2.25;
+                        width: ($col*4) + $gutter*2;
                     }
                 }
                 
                 @media screen and (min-width: $breakpoint3) {
-                    width: ($col*3 - 1%) + $gutter*2;
+                    width: ($col*3) + $gutter*2;
                 }
                 
                 p {
