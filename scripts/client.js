@@ -1,8 +1,9 @@
 $(document).ready(function(){
     var container   = $("body > header, body > nav"),
+        indexContainer = $("body.index > header, body.index > nav");
         a           = $("body > header a, body > nav a");
         
-    container.addClass("rollover");
+    indexContainer.addClass("rollover");
     
     a.mouseenter(function() {
         container.addClass("rollover");
@@ -16,11 +17,11 @@ $(document).ready(function(){
     
     $(document).on("scroll", function(){
         if ($(document).scrollTop() > 100) {
-            container.removeClass("rollover");
-            $("body > .content").removeClass("inactive");
+            indexContainer.removeClass("rollover");
+            $("body.index > .content").removeClass("inactive");
         } else {
-            container.addClass("rollover");
-            $("body > .content").removeClass("inactive");
+            indexContainer.addClass("rollover");
+            $("body.index > .content").removeClass("inactive");
         }
     });
 });

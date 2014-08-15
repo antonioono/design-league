@@ -25,13 +25,10 @@ body {
     
         header {
             position: relative;
-            
-            @media screen and (max-width: $breakpoint2) {
-                @include contentPosition;
-            }
                                
             time {
                 @include small-caps(.75em);
+                @include contentPosition;
     
                 @media screen and (max-width: $breakpoint1) {
                     margin-left: 3.5em;
@@ -53,29 +50,28 @@ body {
             }
             
             author {
-                position: absolute;
-                left: -.875em;
-                top: .55em;
     
                 a {
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                     display: inline-block;
-                    height: .666em;
-                    width:  .666em;
                     text-indent: -9999em;
                     border-radius: 50%;
-                    position: absolute;
-    
-                    &:hover {
-                        border-color: $accent;
-                    }
+                    
+                    
+                    height: .333em;
+                    width: .333em;
                 }
     
                 @media screen and (min-width: $breakpoint1) {
-    
+                    display: block;
+                    position: absolute;
+                    left: -.875em;
+                    top: .55em;
+
                     a {
-                        
+                        height: .666em;
+                        width:  .666em;
                     }
                 }
     

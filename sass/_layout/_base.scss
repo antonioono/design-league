@@ -42,15 +42,24 @@ body {
         position: relative;
         
         @media screen and (min-width: $breakpoint1) {
-            top: 75vh;
+            top: $baseline * 6;
         }
-        
+
         &.inactive {
             opacity: .25;
             -webkit-filter: grayscale(1);
         }
         
         @include transition(all .25s ease-in-out);
+    }
+    
+    &.index {
+        
+        .content {
+            @media screen and (min-width: $breakpoint1) {
+                top: 75vh;
+            }
+        }
     }
 
 }
