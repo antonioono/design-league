@@ -2,19 +2,20 @@ body {
     background: $very-light;
     text-rendering: optimizelegibility;
     overflow-x: hidden;
+    width: 100vw;
     
     &:after {
-        content: "";
-        background-image: url('../images/bg.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        opacity: .1;
-        z-index: -2;
+         content: "";
+/*          background-image: url('../images/bg.jpg'); */
+         background-size: cover;
+         background-repeat: no-repeat;
+         position: fixed;
+         height: 100%;
+         width: 100%;
+         top: 0;
+         left: 0;
+         opacity: .1;
+         z-index: -2;
     }
 
     a {
@@ -42,7 +43,7 @@ body {
         position: relative;
         
         @media screen and (min-width: $breakpoint1) {
-            top: $baseline * 6;
+            top: $baseline * 4;
         }
 
         &.inactive {
