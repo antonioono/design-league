@@ -36,22 +36,22 @@ $marginRight3: $gutter * 3 + $col * 2;
 }
 
 @mixin imageWidth() {
-    margin-left: -$marginLeft0 * 1.25;
-    width: 100% + ($marginLeft0 + $marginRight0 * 1.25);
+    margin-left: -$marginLeft0 * 1.333;
+    width: 100% + ($marginLeft0 + $marginRight0 * 1.6);
 
     @media screen and (min-width: $breakpoint1) {
         margin-left: 0;
-        width: 100% + $marginRight1 * 1.76;
+        width: 100% + $marginRight1 * 1.83;
     }
 
     @media screen and (min-width: $breakpoint2) {
         margin-left: 0;
-        width: 100% + $marginRight2;
+        width: 100% + $marginRight2 * 2.7;
     }
 
     @media screen and (min-width: $breakpoint3) {
         margin-left: 0;
-        width: 100% + $marginLeft3;
+        width: 100% + $marginLeft3 * 1.24;
     }
 }
 
