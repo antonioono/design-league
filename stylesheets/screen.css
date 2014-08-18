@@ -623,7 +623,11 @@ body article header time a {
 body article header time a:hover {
   color: #ff6000;
 }
-/* line 54, ../sass/_layout/_article.scss */
+/* line 52, ../sass/_layout/_article.scss */
+body article header author {
+  display: none;
+}
+/* line 55, ../sass/_layout/_article.scss */
 body article header author a {
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -641,90 +645,90 @@ body article header author a {
     left: -.875em;
     top: .55em;
   }
-  /* line 72, ../sass/_layout/_article.scss */
+  /* line 73, ../sass/_layout/_article.scss */
   body article header author a {
     height: .666em;
     width: .666em;
   }
 }
-/* line 96, ../sass/_layout/_article.scss */
+/* line 97, ../sass/_layout/_article.scss */
 body article section.body {
   margin: 0 10.41667%;
 }
 @media screen and (min-width: 32em) {
-  /* line 96, ../sass/_layout/_article.scss */
+  /* line 97, ../sass/_layout/_article.scss */
   body article section.body {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 96, ../sass/_layout/_article.scss */
+  /* line 97, ../sass/_layout/_article.scss */
   body article section.body {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 96, ../sass/_layout/_article.scss */
+  /* line 97, ../sass/_layout/_article.scss */
   body article section.body {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
-/* line 100, ../sass/_layout/_article.scss */
+/* line 101, ../sass/_layout/_article.scss */
 body article footer {
   margin: 0 10.41667%;
 }
 @media screen and (min-width: 32em) {
-  /* line 100, ../sass/_layout/_article.scss */
+  /* line 101, ../sass/_layout/_article.scss */
   body article footer {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 100, ../sass/_layout/_article.scss */
+  /* line 101, ../sass/_layout/_article.scss */
   body article footer {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 100, ../sass/_layout/_article.scss */
+  /* line 101, ../sass/_layout/_article.scss */
   body article footer {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
-/* line 103, ../sass/_layout/_article.scss */
+/* line 104, ../sass/_layout/_article.scss */
 body article footer ul.meta {
   color: #aaaaaa;
   position: relative;
 }
-/* line 107, ../sass/_layout/_article.scss */
+/* line 108, ../sass/_layout/_article.scss */
 body article footer ul.meta a {
   color: #aaaaaa;
 }
-/* line 109, ../sass/_layout/_article.scss */
+/* line 110, ../sass/_layout/_article.scss */
 body article footer ul.meta a:hover {
   color: #ff6000;
 }
-/* line 112, ../sass/_layout/_article.scss */
+/* line 113, ../sass/_layout/_article.scss */
 body article footer ul.meta li:before {
   content: none;
 }
-/* line 116, ../sass/_layout/_article.scss */
+/* line 117, ../sass/_layout/_article.scss */
 body article footer ul.meta > li {
   margin-top: 0.75em;
   display: block;
 }
 @media screen and (min-width: 32em) {
-  /* line 116, ../sass/_layout/_article.scss */
+  /* line 117, ../sass/_layout/_article.scss */
   body article footer ul.meta > li {
     margin-left: 0;
   }
-  /* line 123, ../sass/_layout/_article.scss */
+  /* line 124, ../sass/_layout/_article.scss */
   body article footer ul.meta > li h2 {
     position: absolute;
     width: 5em;
@@ -733,84 +737,84 @@ body article footer ul.meta > li {
     text-align: right;
   }
 }
-/* line 132, ../sass/_layout/_article.scss */
+/* line 133, ../sass/_layout/_article.scss */
 body article footer ul.meta > li h2 {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 0.75em;
 }
-/* line 138, ../sass/_layout/_article.scss */
+/* line 139, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.tags ul li {
   text-transform: lowercase;
   display: inline-block;
   padding-right: .5em;
 }
-/* line 147, ../sass/_layout/_article.scss */
+/* line 148, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li {
   display: block;
   color: #cccccc;
   margin-bottom: 0.75em;
 }
-/* line 151, ../sass/_layout/_article.scss */
+/* line 152, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li a {
   color: #aaaaaa;
 }
-/* line 153, ../sass/_layout/_article.scss */
+/* line 154, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li a:hover {
   color: #ff6000;
 }
-/* line 155, ../sass/_layout/_article.scss */
+/* line 156, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li img {
   display: none;
 }
-/* line 164, ../sass/_layout/_article.scss */
+/* line 165, ../sass/_layout/_article.scss */
 body article > figure {
   padding-bottom: 0;
 }
-/* line 167, ../sass/_layout/_article.scss */
+/* line 168, ../sass/_layout/_article.scss */
 body article > figure figcaption {
   margin-bottom: 1.5em;
 }
-/* line 171, ../sass/_layout/_article.scss */
+/* line 172, ../sass/_layout/_article.scss */
 body article > figure iframe {
   margin-left: -2.08333%;
   height: auto  !important;
 }
-/* line 178, ../sass/_layout/_article.scss */
+/* line 179, ../sass/_layout/_article.scss */
 body article img {
   height: auto !important;
 }
-/* line 186, ../sass/_layout/_article.scss */
+/* line 187, ../sass/_layout/_article.scss */
 body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
   margin-left: -13.88542%;
   width: 127.08333%;
 }
 @media screen and (min-width: 32em) {
-  /* line 186, ../sass/_layout/_article.scss */
+  /* line 187, ../sass/_layout/_article.scss */
   body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
     margin-left: 0;
     width: 119.0625%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 186, ../sass/_layout/_article.scss */
+  /* line 187, ../sass/_layout/_article.scss */
   body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
     margin-left: 0;
     width: 150.625%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 186, ../sass/_layout/_article.scss */
+  /* line 187, ../sass/_layout/_article.scss */
   body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
     margin-left: 0;
     width: 164.58333%;
   }
 }
-/* line 190, ../sass/_layout/_article.scss */
+/* line 191, ../sass/_layout/_article.scss */
 body article ul {
   list-style-type: none;
 }
-/* line 194, ../sass/_layout/_article.scss */
+/* line 195, ../sass/_layout/_article.scss */
 body article ul li:before {
   content: "\2015";
   color: #aaaaaa;
@@ -818,12 +822,12 @@ body article ul li:before {
   margin-left: -1.5em;
 }
 @media screen and (max-width: 32em) {
-  /* line 194, ../sass/_layout/_article.scss */
+  /* line 195, ../sass/_layout/_article.scss */
   body article ul li:before {
     margin-left: -1em;
   }
 }
-/* line 207, ../sass/_layout/_article.scss */
+/* line 208, ../sass/_layout/_article.scss */
 body article blockquote {
   padding-left: 1.5em;
   border-left: 1pt solid #ff6000;
