@@ -15,7 +15,11 @@ body {
     }
     
     > header { 
-        top: 50%;
+        
+        @media screen and (min-width: $breakpoint1) {
+            top: 50%;
+            height: auto;
+        }
 
         a {
             color: $accent !important;
@@ -39,15 +43,17 @@ body {
         h1.title {
             position: relative;              
             white-space: nowrap;            
+/*
             $logoHeight: .4em;
             background-image: url('../images/logo-breakpoint3.png');
             background-repeat: no-repeat;
             background-size: $logoHeight;
             padding-top: $logoHeight + .25em;
-            
+*/
             span.phrase { display: block; }
         
             @media screen and (min-width: $breakpoint1) {
+/*
                 $logoWidth: .5em;
                 background-size: $logoWidth;
                 $offset: $logoWidth + .25em;    
@@ -55,6 +61,7 @@ body {
                 background-position: 0 .1875em;
                 padding-left: $offset;
                 left: -$offset;
+*/
             }
             
             @media screen and (min-width: $breakpoint2) {
@@ -145,7 +152,16 @@ body {
     
     nav {
         top: 0;
-        margin-left: $gutter;
+        
+        @media screen and (max-width: $breakpoint1) {
+            @include contentPosition;
+            margin-bottom: 4*$baseline;
+        }        
+        
+        @media screen and (min-width: $breakpoint1) {
+            margin-left: $gutter;
+            margin-bottom: 0;
+        }
         
         @media screen and (min-width: $breakpoint2) {
             margin-left: $marginLeft2;

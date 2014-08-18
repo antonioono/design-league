@@ -29,17 +29,10 @@ body {
             time {
                 @include small-caps(.75em);
                 @include contentPosition;
-    
-                @media screen and (max-width: $breakpoint1) {
-                    margin-left: 3.5em;
-                }
-                @media screen and (min-width: $breakpoint1) {
-                    position: relative;
-                    top: -$baseline/3;
-                }
                 
                 a {
                     color: $light;
+                    
                     &:hover {
                         color: $accent;
                     }
