@@ -83,9 +83,24 @@
 	
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
+	<script src="https://dl.dropboxusercontent.com/u/17644651/Design%20League/scripts/jquery.js"></script>
+	<script src="./scripts/client.js"></script>
 		
 </head>
 <body class="{block:IndexPage}index{/block:IndexPage}">
+	<header>
+		<h1 class="title">
+			<a href="/">
+				<span class="phrase">
+					<span class="word">Carnegie</span>
+					<span class="word">Mellon</span>
+				<span class="phrase">
+					<span class="word">Design</span>
+					<span class="word">League</span>
+				</span>
+			</a>
+		</h1>
+	</header>
     <nav>
         <ul class="pages">
             <li>
@@ -111,20 +126,6 @@
         <input type="text" name="q" placeholder="Search"/>
     </form> -->
     </nav>
-	<header>
-    		<!-- <div class="bg"></div> -->
-    		<h1 class="title">
-    			<a href="/">
-    				<span class="phrase">
-    					<span class="word">Carnegie</span>
-    					<span class="word">Mellon</span>
-    				<span class="phrase">
-    					<span class="word">Design</span>
-    					<span class="word">League</span>
-    				</span>
-    			</a>
-    		</h1>
-    	</header>
 	<section class="content">
 		{block:Posts}
 		<article id="post-{postID}" class="post {block:Text}text {/block:Text}{block:Photo}photo {/block:Photo}{block:Photoset}photoset {/block:Photoset}{block:Quote}quote {/block:Quote}{block:Link}link {/block:Link}{block:Chat}chat {/block:Chat}{block:Video}video {/block:Video}{block:Audio}audio {/block:Audio}{block:Answer}answer {/block:Answer}{block:RebloggedFrom}reblog {/block:RebloggedFrom} {block:Tags}tag_{URLSafeTag} {/block:Tags}">
