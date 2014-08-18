@@ -174,14 +174,6 @@ body {
                 @media screen and (min-width: $breakpoint3) {
                     width: ($col*3) + $gutter*2;
                 }
-                
-                p {
-                    opacity: .75;
-    
-                    &:hover {
-                       opacity: 1;
-                    }
-                }
             }
         }
     }

@@ -115,29 +115,22 @@ body {
     
                 > li {
                     margin-top: $leading / 2;
-                    // margin-left: $col*2 + $gutter*3;
                     display: block;
                     
                     @media screen and (min-width: $breakpoint1) {
-                        h2 {
-                            position: absolute;
-                            left: 0;
-                        }
-                    }
-                    
-                    @media screen and (min-width: $breakpoint2) {
                         margin-left: 0;
                         
                         h2 {
+                            position: absolute;
                             width: 5em;
                             left: -5.75em;
+                            line-height: 2.25em;
                             text-align: right
                         }
                     }
     
                     h2 {
                         @include small-caps(.75em);
-                        color: $med-light;
                     }
     
                     &.tags {

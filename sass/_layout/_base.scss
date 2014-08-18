@@ -2,11 +2,11 @@ body {
     background: $very-light;
     text-rendering: optimizelegibility;
     overflow-x: hidden;
-    width: 100vw;
+    max-width: 100%;
     
-    &:after {
-         content: "";
-/*          background-image: url('../images/bg.jpg'); */
+    > .bg {
+/*          content: ""; */
+         @include transition(all .25s ease-out);
          background-size: cover;
          background-repeat: no-repeat;
          position: fixed;
@@ -15,7 +15,13 @@ body {
          top: 0;
          left: 0;
          opacity: .1;
-         z-index: -2;
+         z-index: 0;
+         -webkit-filter: grayscale(1);
+         
+         &.muted {
+             opacity: .05;
+/*             -webkit-filter:grayscale(1) blur(20px); */
+         }
     }
 
     a {
