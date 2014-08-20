@@ -177,7 +177,7 @@ body header author {
   font-size: 16.25vw;
   line-height: 1em;
   font-family: "AkzidenzGrotesk-Light";
-  letter-spacing: -.025em;
+  letter-spacing: -.04em;
   text-transform: lowercase;
 }
 /* line 61, ../sass/_globals/_type.scss */
@@ -186,17 +186,6 @@ body header > .contents > h1 a:hover,
 body header h1 a:hover,
 body header author a:hover {
   border: none !important;
-}
-@media screen and (min-width: 48em) {
-  /* line 53, ../sass/_globals/_type.scss */
-  body header > h1,
-  body header > .contents > h1,
-  body header h1,
-  body header author {
-    font-family: "AkzidenzGrotesk-Light";
-    letter-spacing: -.025em;
-    font-size: 8.647vw;
-  }
 }
 /* line 73, ../sass/_globals/_type.scss */
 body header > h2, body header > .contents > h2 {
@@ -315,7 +304,7 @@ body > header.rollover, body nav.rollover {
 @media screen and (min-width: 32em) {
   /* line 17, ../sass/_layout/_header.scss */
   body > header {
-    top: 50%;
+    bottom: 0;
     height: auto;
   }
 }
@@ -342,15 +331,13 @@ body > header h1, body > header h2 {
 body > header h1.title {
   position: relative;
   white-space: nowrap;
-  /*
-              $logoHeight: .4em;
-              background-image: url('../images/logo-breakpoint3.png');
-              background-repeat: no-repeat;
-              background-size: $logoHeight;
-              padding-top: $logoHeight + .25em;
-  */
+  /*$logoHeight: .4em;
+  background-image: url('../images/logo-breakpoint3.png');
+  background-repeat: no-repeat;
+  background-size: $logoHeight;
+  padding-top: $logoHeight + .25em;*/
 }
-/* line 53, ../sass/_layout/_header.scss */
+/* line 52, ../sass/_layout/_header.scss */
 body > header h1.title span.phrase {
   display: block;
 }
@@ -368,13 +355,7 @@ body > header h1.title span.phrase {
     */
   }
 }
-@media screen and (min-width: 48em) {
-  /* line 68, ../sass/_layout/_header.scss */
-  body > header h1.title span.phrase {
-    display: inline;
-  }
-}
-/* line 72, ../sass/_layout/_header.scss */
+/* line 71, ../sass/_layout/_header.scss */
 body > header h2 {
   font-size: 1em;
   line-height: 1.5em;
@@ -382,84 +363,84 @@ body > header h2 {
   margin: 0 10.41667%;
 }
 @media screen and (min-width: 32em) {
-  /* line 72, ../sass/_layout/_header.scss */
+  /* line 71, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 72, ../sass/_layout/_header.scss */
+  /* line 71, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 72, ../sass/_layout/_header.scss */
+  /* line 71, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 32em) {
-  /* line 72, ../sass/_layout/_header.scss */
+  /* line 71, ../sass/_layout/_header.scss */
   body > header h2 {
     display: none;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 72, ../sass/_layout/_header.scss */
+  /* line 71, ../sass/_layout/_header.scss */
   body > header h2 {
     white-space: nowrap;
   }
 }
-/* line 87, ../sass/_layout/_header.scss */
+/* line 86, ../sass/_layout/_header.scss */
 body > header .search {
   margin-top: 1.16667em;
 }
 @media screen and (max-width: 32em) {
-  /* line 87, ../sass/_layout/_header.scss */
+  /* line 86, ../sass/_layout/_header.scss */
   body > header .search {
     display: none;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 87, ../sass/_layout/_header.scss */
+  /* line 86, ../sass/_layout/_header.scss */
   body > header .search {
     margin: 0 10.41667%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32em) {
-  /* line 87, ../sass/_layout/_header.scss */
+  /* line 86, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 48em) {
-  /* line 87, ../sass/_layout/_header.scss */
+  /* line 86, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 84em) {
-  /* line 87, ../sass/_layout/_header.scss */
+  /* line 86, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 87, ../sass/_layout/_header.scss */
+  /* line 86, ../sass/_layout/_header.scss */
   body > header .search {
     position: absolute;
     top: 1.5em;
     right: 2.08333%;
   }
 }
-/* line 104, ../sass/_layout/_header.scss */
+/* line 103, ../sass/_layout/_header.scss */
 body > header .search input {
   background: none;
   padding: 0;
@@ -485,7 +466,7 @@ body > header .search input {
   -o-transition-timing-function: cubic-bezier(1, 0, 0, 1);
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-/* line 121, ../sass/_layout/_header.scss */
+/* line 120, ../sass/_layout/_header.scss */
 body > header .search input ::-webkit-input-placeholder
 ::-moz-input-placeholder
 ::-ms-input-placeholder
@@ -493,113 +474,113 @@ body > header .search input ::-webkit-input-placeholder
   opacity: 1;
   font-family: "AkzidenzGrotesk";
 }
-/* line 130, ../sass/_layout/_header.scss */
+/* line 129, ../sass/_layout/_header.scss */
 body > header .search input:hover {
   width: 10em;
 }
-/* line 134, ../sass/_layout/_header.scss */
+/* line 133, ../sass/_layout/_header.scss */
 body > header .search input:focus {
   border-bottom-color: #ff6000;
   width: 15em;
 }
 @media screen and (min-width: 48em) {
-  /* line 104, ../sass/_layout/_header.scss */
+  /* line 103, ../sass/_layout/_header.scss */
   body > header .search input {
     width: 6em;
   }
-  /* line 141, ../sass/_layout/_header.scss */
+  /* line 140, ../sass/_layout/_header.scss */
   body > header .search input:hover {
     width: 7.5em;
   }
-  /* line 142, ../sass/_layout/_header.scss */
+  /* line 141, ../sass/_layout/_header.scss */
   body > header .search input:focus {
     width: 10em;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 104, ../sass/_layout/_header.scss */
+  /* line 103, ../sass/_layout/_header.scss */
   body > header .search input {
     width: 9em;
   }
-  /* line 146, ../sass/_layout/_header.scss */
+  /* line 145, ../sass/_layout/_header.scss */
   body > header .search input:hover {
     width: 10em;
   }
-  /* line 147, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body > header .search input:focus {
     width: 15em;
   }
 }
-/* line 153, ../sass/_layout/_header.scss */
+/* line 152, ../sass/_layout/_header.scss */
 body nav {
   top: 0;
 }
 @media screen and (max-width: 32em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin: 0 10.41667%;
     margin-bottom: 6rem;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 32em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 48em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 84em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 32em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 2.08333%;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 43.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 153, ../sass/_layout/_header.scss */
+  /* line 152, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 52.08333%;
   }
 }
-/* line 176, ../sass/_layout/_header.scss */
+/* line 175, ../sass/_layout/_header.scss */
 body nav ul li {
   margin-right: 2.08333%;
   margin-top: 0.375em;
 }
 @media screen and (min-width: 32em) {
-  /* line 176, ../sass/_layout/_header.scss */
+  /* line 175, ../sass/_layout/_header.scss */
   body nav ul li {
     display: inline-block;
     vertical-align: top;
     width: 31.25%;
   }
-  /* line 185, ../sass/_layout/_header.scss */
+  /* line 184, ../sass/_layout/_header.scss */
   body nav ul li:last-child {
     width: 29.16667%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 176, ../sass/_layout/_header.scss */
+  /* line 175, ../sass/_layout/_header.scss */
   body nav ul li {
     width: 22.91667%;
   }
