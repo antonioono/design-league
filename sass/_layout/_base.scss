@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
     max-width: 100%;
     
+    @media screen and (min-width: $breakpoint1) {
+        max-width: 100vw;
+    }
+    
     > .bg {
 /*          content: ""; */
          @include transition(all .25s ease-out);
@@ -20,7 +24,6 @@ body {
          
          &.muted {
              opacity: .05;
-/*             -webkit-filter:grayscale(1) blur(20px); */
          }
     }
 
@@ -64,7 +67,7 @@ body {
         
         .content {
             @media screen and (min-width: $breakpoint1) {
-                top: 75vh;
+                top: 66.66vh;
             }
         }
     }
