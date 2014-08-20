@@ -12,7 +12,7 @@ $(document).ready(function(){
     setBackground();
     
     function setBackground() {
-        var imageSrc    = $("body > .content > article .body img").first().attr("src");
+        var imageSrc    = $("body > .content > article .body img").eq(1).attr("src");
         bg.css("background-image", "url('"+imageSrc+"')");
         console.log("url('" + imageSrc + "');");
     }
