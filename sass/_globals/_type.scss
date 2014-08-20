@@ -1,11 +1,10 @@
 @import "./_font-face.scss";
 
-$hairline:      "tazhair21";
-$ultralight:    "tazultralight";
-$light-font:    "tazlight";
-$semilight:     "tazsemilight";
-$regular:       "tazregular";
-$bold:          "tazbold";
+$light-font:    "AkzidenzGrotesk-Light";
+$semilight:     "AkzidenzGrotesk";
+$regular:       "AkzidenzGrotesk";
+$bold:          "AkzidenzGrotesk-Bold";
+$black:         "AkzidenzGrotesk-Black";
 $italic:        "tazitalic";
 
 $bodyRegular:   "BemboStd";
@@ -17,8 +16,8 @@ $bodyRegular:   "BemboStd";
 }
 
 body {
-    font-family: $semilight;
-    font-size: 12pt;
+    font-family: $regular;
+    font-size: 11pt;
     line-height: 1.5em;
     
     ::selection {
@@ -43,6 +42,7 @@ body {
     
     .small-caps {
         @include small-caps;
+        font-family: $bold;
         font-size: .75em;
     }
     
@@ -53,7 +53,8 @@ body {
         author {
             font-size: 16.25vw;
             line-height: 1em;
-            font-family: $ultralight;
+            font-family: $light-font;
+            letter-spacing: -.025em;
             text-transform: lowercase;
         
             a {
@@ -63,13 +64,14 @@ body {
             }
                     
             @media screen and (min-width: $breakpoint2) {
-                font-family: $hairline;
-                font-size: 8.665vw;
+                font-family: $light-font;
+                letter-spacing: -.025em;
+                font-size: 8.647vw;
             }
         }
         
         > h2,  > .contents > h2 {
-            font-family: $regular;
+            font-family: $bold;
         }
     }
     
@@ -89,7 +91,7 @@ body {
         
         h1 {
             @include small-caps(.75em);
-            font-family: $regular;
+            font-family: $black;
         }
     }
 }

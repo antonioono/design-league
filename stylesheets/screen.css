@@ -135,37 +135,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 19, ../sass/_globals/_type.scss */
+/* line 18, ../sass/_globals/_type.scss */
 body {
-  font-family: "tazsemilight";
-  font-size: 12pt;
+  font-family: "AkzidenzGrotesk";
+  font-size: 11pt;
   line-height: 1.5em;
 }
-/* line 24, ../sass/_globals/_type.scss */
+/* line 23, ../sass/_globals/_type.scss */
 body ::selection {
   background: #ff6000;
   color: white;
 }
-/* line 29, ../sass/_globals/_type.scss */
+/* line 28, ../sass/_globals/_type.scss */
 body ::-moz-selection {
   background: #ff6000;
   color: white;
 }
-/* line 34, ../sass/_globals/_type.scss */
+/* line 33, ../sass/_globals/_type.scss */
 body em {
   font-family: "tazitalic";
   font-style: italic;
 }
-/* line 39, ../sass/_globals/_type.scss */
+/* line 38, ../sass/_globals/_type.scss */
 body strong {
-  font-family: "tazbold";
+  font-family: "AkzidenzGrotesk-Bold";
   font-weight: bold;
 }
-/* line 44, ../sass/_globals/_type.scss */
+/* line 43, ../sass/_globals/_type.scss */
 body .small-caps {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 1em;
+  font-family: "AkzidenzGrotesk-Bold";
   font-size: .75em;
 }
 /* line 53, ../sass/_globals/_type.scss */
@@ -175,10 +176,11 @@ body header h1,
 body header author {
   font-size: 16.25vw;
   line-height: 1em;
-  font-family: "tazultralight";
+  font-family: "AkzidenzGrotesk-Light";
+  letter-spacing: -.025em;
   text-transform: lowercase;
 }
-/* line 60, ../sass/_globals/_type.scss */
+/* line 61, ../sass/_globals/_type.scss */
 body header > h1 a:hover,
 body header > .contents > h1 a:hover,
 body header h1 a:hover,
@@ -191,20 +193,21 @@ body header author a:hover {
   body header > .contents > h1,
   body header h1,
   body header author {
-    font-family: "tazhair21";
-    font-size: 8.665vw;
+    font-family: "AkzidenzGrotesk-Light";
+    letter-spacing: -.025em;
+    font-size: 8.647vw;
   }
 }
-/* line 71, ../sass/_globals/_type.scss */
+/* line 73, ../sass/_globals/_type.scss */
 body header > h2, body header > .contents > h2 {
-  font-family: "tazregular";
+  font-family: "AkzidenzGrotesk-Bold";
 }
-/* line 90, ../sass/_globals/_type.scss */
+/* line 92, ../sass/_globals/_type.scss */
 body nav ul li h1 {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 0.75em;
-  font-family: "tazregular";
+  font-family: "AkzidenzGrotesk-Black";
 }
 
 /* line 1, ../sass/_layout/_base.scss */
@@ -467,7 +470,7 @@ body > header .search input {
   width: 9em;
   border-bottom: 1pt white solid;
   font-size: 1em;
-  font-family: "tazsemilight";
+  font-family: "AkzidenzGrotesk";
   color: white;
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -488,7 +491,7 @@ body > header .search input ::-webkit-input-placeholder
 ::-ms-input-placeholder
 ::input-placeholder {
   opacity: 1;
-  font-family: "tazsemilight";
+  font-family: "AkzidenzGrotesk";
 }
 /* line 130, ../sass/_layout/_header.scss */
 body > header .search input:hover {
