@@ -26,27 +26,8 @@
 
     <link href="style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="http://codysherman.tumblr.com/tools/infinite-scrolling/code"></script>
-
-    <script>
-        // var toggle = document.getElementsByClassName("toggle");
-        // for (i in toggle) {
-        // 	toggle[i].click = function() {
-        // 		var classes = gallery.className;
-        // 		toggle.[i].setAttribute("class", classes + "open");
-        // 	}
-        // 	open[i].click = function() {
-        // 		open.[i].setAttribute("class", "open");
-        // 	}
-        // }
-        // 
-        // var open = document.getElementsByClassName("open");
-        // for (i in open) {
-        // 	open[i].click = function() {
-        // 		open.[i].setAttribute("class", "open");
-        // 	}
-        // }
-
-    </script>
+    <script src="https://dl.dropboxusercontent.com/u/17644651/Design%20League/scripts/jquery.js"></script>
+    <script src="./scripts/client.js"></script>
 
 <link rel="alternate" href="android-app://com.tumblr/tumblr/x-callback-url/blog?blogName=cmudesignleague" />
 <script src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=01da904aa1515a5ccb68a7107eb907d5"></script>
@@ -58,49 +39,47 @@
 </head>
 <body class="index">
     <header>
-        <div class="bg"></div>
-        <div class="contents">
-            <h1 class="title">
-                <a href="/">
-                    <span class="phrase">
-                        <span class="word">Carnegie</span>
-                        <span class="word">Mellon</span>
-                    <span class="phrase">
-                        <span class="word">Design</span>
-                        <span class="word">League</span>
-                    </span>
-                </a>
-            </h1>
-            <nav>
-                <ul class="pages">
-                    <li>
-                        <a href="/about">
-                            <h1>About</h1>
-                            <p>The official organization for Carnegie Mellon design students.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/design-at-work">
-                            <h1>Design at Work</h1>
-                            <p>Carnegie Mellon Design students share their internship experiences.</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/portfolios">
-                            <h1>Student Portfolios</h1>
-                            <p>View work from current undergradutate and graduate students</p>
-                        </a>
-                    </li>
-                </ul>
-<!--             <form id="search-form" class="search" method="get" action="/search">
-                <input type="text" name="q" placeholder="Search"/>
-            </form> -->
-            </nav>
-        </div>
+        <h1 class="title">
+            <a href="/">
+                <span class="phrase">
+                    <span class="word">Carnegie</span>
+                    <span class="word">Mellon</span>
+                <span class="phrase">
+                    <span class="word">Design</span>
+                    <span class="word">League</span>
+                </span>
+            </a>
+        </h1>
     </header>
+    <nav>
+        <ul class="pages">
+            <li>
+                <a href="/about">
+                    <h1>About</h1>
+                    <p>The official organization for Carnegie Mellon design students.</p>
+                </a>
+            </li>
+            <li>
+                <a href="/design-at-work">
+                    <h1>Design at Work</h1>
+                    <p>Carnegie Mellon Design students share their internship experiences.</p>
+                </a>
+            </li>
+            <li>
+                <a href="/portfolios">
+                    <h1>Student Portfolios</h1>
+                    <p>View work from current undergradutate and graduate students</p>
+                </a>
+            </li>
+        </ul>
+        <!-- <form id="search-form" class="search" method="get" action="/search">
+            <input type="text" name="q" placeholder="Search"/>
+        </form> -->
+    </nav>
+    <div class="bg"></div>
     <section class="content">
 
-<!--         <article id="post-94072984050" class="post photoset  tag_vivian+ma tag_facebook tag_design+at+work tag_summer+2014 tag_internship tag_communication+design tag_bay+area tag_menlo+park ">
+         <article id="post-94072984050" class="post photoset  tag_vivian+ma tag_facebook tag_design+at+work tag_summer+2014 tag_internship tag_communication+design tag_bay+area tag_menlo+park ">
             <header>
                 <author>
                     <a href="http://faceworldproblems.tumblr.com/" style="background-image: url('http://31.media.tumblr.com/avatar_ef31e164d743_96.png')">
@@ -110,6 +89,8 @@
                 <time><a href="http://cmudesignleague.tumblr.com/post/94072984050/vivian-facebook-im-vivian-a-rising-senior-in">3 days ago</a></time>
 
             </header>
+            <section class="body">
+                
 
 
 
@@ -260,7 +241,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+</section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
@@ -304,7 +285,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
                 </ul>
             </footer>
-        </article> -->
+        </article>
         <article id="post-93784884552" class="post text  tag_gene+hua tag_design+at+work tag_palantir tag_palo+alto tag_bay+area tag_internship tag_summer+2014 tag_2014 ">
             <header>
                 <author>
@@ -317,7 +298,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
                 <h1><a href="http://cmudesignleague.tumblr.com/post/93784884552/gene-palantir">Gene @ Palantir </a></h1>
 
             </header>
-
+<section class="body">
 
 
 
@@ -352,6 +333,8 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 <p><img alt="image" src="http://media.tumblr.com/299346aaa8af55d74ce26b3e70383a62/tumblr_inline_n9oy4omszY1qahzc5.jpg"/></p>
 
 <p><br/>If you&#8217;ve got any more questions about design at Palantir, or the company in general, feel free to shoot me a note at <a href="mailto:genehua@cmu.edu" target="_blank">genehua@cmu.edu</a>.</p>
+
+</section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
@@ -411,7 +394,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
             </header>
 
 
-
+<section class="body">
 
 
 
@@ -454,6 +437,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 <p><img src="http://media.tumblr.com/eb2f5f324afe0af6f29b13978a68075a/tumblr_inline_n90wk67PAq1qivagy.jpg" alt=""/></p>
 
 <p>I knew before coming to Facebook that they had a number of exceptional designers. I can now sort of see how they got there&#8212;the company definitely not only spawns and grows great products, but also fosters the growth of people. Over the past summers I slowly realized the importance of a good mentor, and it&#8217;s really amazing seeing how my mentor/manager this summer helps me become a better designer (oh, and he&#8217;s a CMU alum!). It&#8217;s not just him, either. I get an indirect sense of what his manager is like because we have a lot of crits and discussions together, and it confirms the fact that Facebook cultivates people. Good mentors and good designers.</p>
+</section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
@@ -516,7 +500,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+<section class="body">
 
 
 
@@ -547,6 +531,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 <p class="MsoNormal"><img alt="image" src="http://media.tumblr.com/b6a2b23699daee59dd83c7afb1d45361/tumblr_inline_mqkgix3cXb1qz4rgp.jpg"/></p>
 <p><em>Snippets of the food from the goodbye party. Yummy.</em></p>
 <p>Well that&#8217;s it! If you have any questions feel free to ask me. I&#8217;ll be off to Switzerland in a week to study for a semester in St. Gallen, so see you guys in January! </p>
+</sectino>
             <footer>
                 <ul class="meta">
 
@@ -568,7 +553,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
             </header>
 
-
+<section class="body">
 
 
 
@@ -590,6 +575,8 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 <p>As promised: Here are the first parts printed in clear acrylic. I let it run overnight so I&#8217;m not sure how long the job took. The machine runs really nicely, the beam of UV light is steered around a bath of uncured arcrylic by articulating mirrors instead of moving along x y and z axis with stepping motors, so its absolutely silent. Its hard to tell because of all the support structure, but the 0.05mm resolution is fantastic. The parts took an hour of xacto and sandpaper work.</p>
 <p><img src="http://media.tumblr.com/9cddd80faba8413df32bc506119fdea7/tumblr_inline_mqgk9u8VvL1qz4rgp.jpg"/></p>
+
+</section>
             <footer>
                 <ul class="meta">
 
@@ -615,7 +602,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+<section class="body">
 
 
 
@@ -673,6 +660,8 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 <p><span>Cheers.</span></p>
+
+</section>
             <footer>
                 <ul class="meta">
 
@@ -700,7 +689,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+<section class="body">
 
 
 
@@ -716,6 +705,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 <p></p>
 <p class="read_more_container"><a href="http://cmudesignleague.tumblr.com/post/55649943443/zhuoshi-evernote" class="read_more">Read More</a></p>
+</section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
@@ -769,7 +759,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+<section class="body">
 
 
 
@@ -804,6 +794,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 <p><span>So, despite the fact that I study Industrial Design, there is a lot of overlap between the disciplines. Most of what I have learned studying ID directly applies to UX. I have found that UX design is not more or less interesting than ID, it&#8217;s simply different, and it&#8217;s a field which I have really come to appreciate. </span></p>
 
 <p class="p2"><span>There are also unlimited raw almonds in the kitchen, which is a HUGE deal. I consider that free healthcare.</span><span> </span></p>
+</section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
@@ -860,7 +851,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+<section class="body">
 
 
 
@@ -878,6 +869,7 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 <p><img alt="image" src="http://media.tumblr.com/401369c50a66cb4411a156351a327430/tumblr_inline_mpzyu1o4zs1qz4rgp.png"/></p>
 
 <p>Thus far, I&#8217;m enjoying the ride! Next time, I&#8217;ll try and talk about how this summer is a major contrast to last summer with the internship I had, where I lived, and the environment I worked in. :)</p>
+</section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
@@ -947,11 +939,12 @@ Of course, it&rsquo;s not always work. Actually, you might even say we have too 
 
 
 
-
+<section class="body">
 
 
 
             <p>In the coming weeks, as we have done previous years, students from the School of Design will be posting about their summer internships here. Dozens of design students from CMU are interning at a range of companies as diverse as Apple, Cooper, Facebook, Google, IBM, Landor Associates, Microsoft, Ogilvy &amp; Mather, R/GA, and Sennheiser, and will be reflecting on their experiences here in words and images</p>
+        </section>
             <footer>
                 <ul class="meta">
                     <li class="tags toggle">
