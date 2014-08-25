@@ -42,7 +42,8 @@ body {
         
         h1.title {
             position: relative;              
-            white-space: nowrap;            
+            white-space: nowrap;
+            
 
             /*$logoHeight: .4em;
             background-image: url('../images/logo-breakpoint3.png');
@@ -52,15 +53,13 @@ body {
             span.phrase { display: block; }
         
             @media screen and (min-width: $breakpoint1) {
-/*
-                $logoWidth: .5em;
-                background-size: $logoWidth;
-                $offset: $logoWidth + .25em;    
-                padding-top: 0;                  
-                background-position: 0 .1875em;
-                padding-left: $offset;
-                left: -$offset;
-*/
+                // $logoWidth: .5em;
+                // background-size: $logoWidth;
+                // $offset: $logoWidth + .25em;    
+                // padding-top: 0;                  
+                // background-position: 0 .1875em;
+                // padding-left: $offset;
+                // left: -$offset;
             }
             
             @media screen and (min-width: $breakpoint2) {

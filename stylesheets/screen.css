@@ -187,6 +187,15 @@ body header h1 a:hover,
 body header author a:hover {
   border: none !important;
 }
+@media screen and (min-width: 48em) {
+  /* line 53, ../sass/_globals/_type.scss */
+  body header > h1,
+  body header > .contents > h1,
+  body header h1,
+  body header author {
+    letter-spacing: -.025em;
+  }
+}
 /* line 73, ../sass/_globals/_type.scss */
 body header > h2, body header > .contents > h2 {
   font-family: "AkzidenzGrotesk-Bold";
@@ -337,25 +346,11 @@ body > header h1.title {
   background-size: $logoHeight;
   padding-top: $logoHeight + .25em;*/
 }
-/* line 52, ../sass/_layout/_header.scss */
+/* line 53, ../sass/_layout/_header.scss */
 body > header h1.title span.phrase {
   display: block;
 }
-@media screen and (min-width: 32em) {
-  /* line 43, ../sass/_layout/_header.scss */
-  body > header h1.title {
-    /*
-                    $logoWidth: .5em;
-                    background-size: $logoWidth;
-                    $offset: $logoWidth + .25em;    
-                    padding-top: 0;                  
-                    background-position: 0 .1875em;
-                    padding-left: $offset;
-                    left: -$offset;
-    */
-  }
-}
-/* line 71, ../sass/_layout/_header.scss */
+/* line 70, ../sass/_layout/_header.scss */
 body > header h2 {
   font-size: 1em;
   line-height: 1.5em;
@@ -363,84 +358,84 @@ body > header h2 {
   margin: 0 10.41667%;
 }
 @media screen and (min-width: 32em) {
-  /* line 71, ../sass/_layout/_header.scss */
+  /* line 70, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 71, ../sass/_layout/_header.scss */
+  /* line 70, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 71, ../sass/_layout/_header.scss */
+  /* line 70, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 32em) {
-  /* line 71, ../sass/_layout/_header.scss */
+  /* line 70, ../sass/_layout/_header.scss */
   body > header h2 {
     display: none;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 71, ../sass/_layout/_header.scss */
+  /* line 70, ../sass/_layout/_header.scss */
   body > header h2 {
     white-space: nowrap;
   }
 }
-/* line 86, ../sass/_layout/_header.scss */
+/* line 85, ../sass/_layout/_header.scss */
 body > header .search {
   margin-top: 1.16667em;
 }
 @media screen and (max-width: 32em) {
-  /* line 86, ../sass/_layout/_header.scss */
+  /* line 85, ../sass/_layout/_header.scss */
   body > header .search {
     display: none;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 86, ../sass/_layout/_header.scss */
+  /* line 85, ../sass/_layout/_header.scss */
   body > header .search {
     margin: 0 10.41667%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32em) {
-  /* line 86, ../sass/_layout/_header.scss */
+  /* line 85, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 48em) {
-  /* line 86, ../sass/_layout/_header.scss */
+  /* line 85, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 84em) {
-  /* line 86, ../sass/_layout/_header.scss */
+  /* line 85, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 86, ../sass/_layout/_header.scss */
+  /* line 85, ../sass/_layout/_header.scss */
   body > header .search {
     position: absolute;
     top: 1.5em;
     right: 2.08333%;
   }
 }
-/* line 103, ../sass/_layout/_header.scss */
+/* line 102, ../sass/_layout/_header.scss */
 body > header .search input {
   background: none;
   padding: 0;
@@ -466,7 +461,7 @@ body > header .search input {
   -o-transition-timing-function: cubic-bezier(1, 0, 0, 1);
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-/* line 120, ../sass/_layout/_header.scss */
+/* line 119, ../sass/_layout/_header.scss */
 body > header .search input ::-webkit-input-placeholder
 ::-moz-input-placeholder
 ::-ms-input-placeholder
@@ -474,113 +469,113 @@ body > header .search input ::-webkit-input-placeholder
   opacity: 1;
   font-family: "AkzidenzGrotesk";
 }
-/* line 129, ../sass/_layout/_header.scss */
+/* line 128, ../sass/_layout/_header.scss */
 body > header .search input:hover {
   width: 10em;
 }
-/* line 133, ../sass/_layout/_header.scss */
+/* line 132, ../sass/_layout/_header.scss */
 body > header .search input:focus {
   border-bottom-color: #ff6000;
   width: 15em;
 }
 @media screen and (min-width: 48em) {
-  /* line 103, ../sass/_layout/_header.scss */
+  /* line 102, ../sass/_layout/_header.scss */
   body > header .search input {
     width: 6em;
   }
-  /* line 140, ../sass/_layout/_header.scss */
+  /* line 139, ../sass/_layout/_header.scss */
   body > header .search input:hover {
     width: 7.5em;
   }
-  /* line 141, ../sass/_layout/_header.scss */
+  /* line 140, ../sass/_layout/_header.scss */
   body > header .search input:focus {
     width: 10em;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 103, ../sass/_layout/_header.scss */
+  /* line 102, ../sass/_layout/_header.scss */
   body > header .search input {
     width: 9em;
   }
-  /* line 145, ../sass/_layout/_header.scss */
+  /* line 144, ../sass/_layout/_header.scss */
   body > header .search input:hover {
     width: 10em;
   }
-  /* line 146, ../sass/_layout/_header.scss */
+  /* line 145, ../sass/_layout/_header.scss */
   body > header .search input:focus {
     width: 15em;
   }
 }
-/* line 152, ../sass/_layout/_header.scss */
+/* line 151, ../sass/_layout/_header.scss */
 body nav {
   top: 0;
 }
 @media screen and (max-width: 32em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin: 0 10.41667%;
     margin-bottom: 6rem;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 32em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 48em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 84em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 32em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 2.08333%;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 43.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 152, ../sass/_layout/_header.scss */
+  /* line 151, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 52.08333%;
   }
 }
-/* line 175, ../sass/_layout/_header.scss */
+/* line 174, ../sass/_layout/_header.scss */
 body nav ul li {
   margin-right: 2.08333%;
   margin-top: 0.375em;
 }
 @media screen and (min-width: 32em) {
-  /* line 175, ../sass/_layout/_header.scss */
+  /* line 174, ../sass/_layout/_header.scss */
   body nav ul li {
     display: inline-block;
     vertical-align: top;
     width: 31.25%;
   }
-  /* line 184, ../sass/_layout/_header.scss */
+  /* line 183, ../sass/_layout/_header.scss */
   body nav ul li:last-child {
     width: 29.16667%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 175, ../sass/_layout/_header.scss */
+  /* line 174, ../sass/_layout/_header.scss */
   body nav ul li {
     width: 22.91667%;
   }
