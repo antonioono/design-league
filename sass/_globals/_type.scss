@@ -54,7 +54,7 @@ body {
             font-size: 16.25vw;
             line-height: 1em;
             font-family: $light-font;
-            letter-spacing: -.04em;
+            letter-spacing: -.025em;
             text-transform: lowercase;
         
             a {
@@ -64,9 +64,9 @@ body {
             }
                     
             @media screen and (min-width: $breakpoint2) {
-                // font-family: $light-font;
+                font-family: $light-font;
                 letter-spacing: -.025em;
-                // font-size: 8.647vh;
+                font-size: 8.647vw;
             }
         }
         
