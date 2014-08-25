@@ -5,7 +5,7 @@ $semilight:     "AkzidenzGrotesk";
 $regular:       "AkzidenzGrotesk";
 $bold:          "AkzidenzGrotesk-Bold";
 $black:         "AkzidenzGrotesk-Black";
-$italic:        "tazitalic";
+$italic:        "Helvetica";
 
 $bodyRegular:   "BemboStd";
 
@@ -33,6 +33,7 @@ body {
     em {
         font-family: $italic;
         font-style: italic;
+        font-size: .95em;
     }
     
     strong {

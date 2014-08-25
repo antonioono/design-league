@@ -18,7 +18,7 @@ body {
          width: 100%;
          top: 0;
          left: 0;
-         opacity: .1;
+         opacity: .5;
          z-index: 0;
          -webkit-filter: grayscale(1);
          
@@ -57,7 +57,7 @@ body {
 
         &.inactive {
             opacity: .25;
-            -webkit-filter: grayscale(1);
+            -webkit-filter: grayscale(1) brightness(2);
         }
         
         @include transition(all .25s linear);

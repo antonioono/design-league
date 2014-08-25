@@ -153,15 +153,16 @@ body ::-moz-selection {
 }
 /* line 33, ../sass/_globals/_type.scss */
 body em {
-  font-family: "tazitalic";
+  font-family: "Helvetica";
   font-style: italic;
+  font-size: .95em;
 }
-/* line 38, ../sass/_globals/_type.scss */
+/* line 39, ../sass/_globals/_type.scss */
 body strong {
   font-family: "AkzidenzGrotesk-Bold";
   font-weight: bold;
 }
-/* line 43, ../sass/_globals/_type.scss */
+/* line 44, ../sass/_globals/_type.scss */
 body .small-caps {
   text-transform: uppercase;
   letter-spacing: .125em;
@@ -169,7 +170,7 @@ body .small-caps {
   font-family: "AkzidenzGrotesk-Bold";
   font-size: .75em;
 }
-/* line 53, ../sass/_globals/_type.scss */
+/* line 54, ../sass/_globals/_type.scss */
 body header > h1,
 body header > .contents > h1,
 body header h1,
@@ -180,7 +181,7 @@ body header author {
   letter-spacing: -.025em;
   text-transform: lowercase;
 }
-/* line 61, ../sass/_globals/_type.scss */
+/* line 62, ../sass/_globals/_type.scss */
 body header > h1 a:hover,
 body header > .contents > h1 a:hover,
 body header h1 a:hover,
@@ -188,7 +189,7 @@ body header author a:hover {
   border: none !important;
 }
 @media screen and (min-width: 48em) {
-  /* line 53, ../sass/_globals/_type.scss */
+  /* line 54, ../sass/_globals/_type.scss */
   body header > h1,
   body header > .contents > h1,
   body header h1,
@@ -198,11 +199,11 @@ body header author a:hover {
     font-size: 8.647vw;
   }
 }
-/* line 73, ../sass/_globals/_type.scss */
+/* line 74, ../sass/_globals/_type.scss */
 body header > h2, body header > .contents > h2 {
   font-family: "AkzidenzGrotesk-Bold";
 }
-/* line 92, ../sass/_globals/_type.scss */
+/* line 93, ../sass/_globals/_type.scss */
 body nav ul li h1 {
   text-transform: uppercase;
   letter-spacing: .125em;
@@ -237,7 +238,7 @@ body > .bg {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: .1;
+  opacity: .5;
   z-index: 0;
   -webkit-filter: grayscale(1);
 }
@@ -284,7 +285,7 @@ body .content {
 /* line 58, ../sass/_layout/_base.scss */
 body .content.inactive {
   opacity: .25;
-  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(1) brightness(2);
 }
 
 /* line 3, ../sass/_layout/_header.scss */
@@ -296,7 +297,7 @@ body > header, body nav {
   body > header, body nav {
     opacity: .125;
     position: fixed;
-    bottom: 0;
+    bottom: 12.5vh;
     -webkit-filter: grayscale(1);
     -webkit-transition-property: opacity, -webkit-filter;
     -moz-transition-property: opacity, -webkit-filter;
