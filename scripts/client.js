@@ -6,7 +6,7 @@ $(document).ready(function(){
         content     = $("body > .content"),
         article     = $("body > .content > article"),
         bg          = $("body .bg"),
-        isIndex     = $("body").hasClass("index"),
+        isIndex     = false, // $("body").hasClass("index"),
         isPost      = !isIndex;
         
     setBackground();

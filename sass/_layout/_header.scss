@@ -4,22 +4,26 @@ body {
         z-index: 2;
         
         @media screen and (min-width: $breakpoint1) {
-            opacity: .25;
+            opacity: .125;
             position: fixed;
-            @include transition(opacity .25s ease-in-out);
+            bottom: 0;
+            -webkit-filter: grayscale(1);
+            @include transition-property(opacity, -webkit-filter);
+            @include transition(.25s linear);
         }
         
         &.rollover {
             opacity: 1;
+            -webkit-filter: none;
         }
     }
     
     > header { 
         
-        @media screen and (min-width: $breakpoint1) {
-            top: 50%;
-            height: auto;
-        }
+        // @media screen and (min-width: $breakpoint1) {
+        //     top: 50%;
+        //     height: auto;
+        // }
 
         a {
             color: $accent !important;

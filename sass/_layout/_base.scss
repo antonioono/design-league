@@ -60,16 +60,16 @@ body {
             -webkit-filter: grayscale(1);
         }
         
-        @include transition(all .25s ease-in-out);
+        @include transition(all .25s linear);
     }
     
-    &.index {
-        
-        .content {
-            @media screen and (min-width: $breakpoint1) {
-                top: 66.66vh;
-            }
-        }
-    }
+    // &.index {
+    //     
+    //     .content {
+    //         @media screen and (min-width: $breakpoint1) {
+    //             top: 66.66vh;
+    //         }
+    //     }
+    // }
 
 }
