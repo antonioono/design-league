@@ -6,8 +6,9 @@ $(document).ready(function(){
         content     = $("body > .content"),
         article     = $("body > .content > article"),
         bg          = $("body .bg"),
-        isIndex     = false, // $("body").hasClass("index"),
-        isPost      = !isIndex;
+        isIndex     = false,
+        isPost      = !isIndex,
+        hasScrolled = false;
         
     setBackground();
     
@@ -21,15 +22,18 @@ $(document).ready(function(){
     
     if (isIndex) content.removeClass("inactive");
        
+/*
     setTimeout(function() {
         focusContent();
     }, 3000);
+*/
     
+/*
     headerLink.mouseenter(function() {
         if (isPost) {
             focusHeader();
         } else { // Index
-            if ($(document).scrollTop() < 1) { // At top
+            if ($(document).scrollTop() < 10) { // At top
                 focusBoth()
             } else { // Not at top, default behavior
                 focusHeader();
@@ -41,9 +45,7 @@ $(document).ready(function(){
         if (isPost) {
             focusContent();
         } else { // Index
-            if ($(document).scrollTop() < 1) { // At top
-                focusBoth();
-            } else { // Not at top, default behavior
+            if ($(document).scrollTop() > 10) {
                 focusContent();
             }
         }
@@ -52,18 +54,26 @@ $(document).ready(function(){
     article.mouseenter(function() {
         if (isPost) {
             focusContent();
-            console.log("ISPOST");
         } else {
-            if ($(document).scrollTop() < 1) { // At top
-                focusBoth();
-            } else { // Not at top, default behavior
-                focusContent()
+            if (hasScrolled) {
+                focusContent();
             }
         }
     });
     
+    article.find("header h1").mouseenter(function() {
+        focusContent()
+    });
+    
+    article.find("header h1").mouseout(function() {
+        if ($(document).screenTop() < 10) { // At top
+            focusHeader();
+        }
+    });
+*/
 
     $(document).on("scroll", function(){
+        hasScrolled = true
         if ($(document).scrollTop() > 0) { // Not at top
             focusContent();
         } else { // At top
@@ -82,11 +92,6 @@ $(document).ready(function(){
         header.addClass("rollover");
         content.addClass("inactive");
         bg.removeClass("muted");
-    }
-    
-    function focusBoth() {
-        header.addClass("rollover");
-        content.removeClass("inactive");
     }
     
 });

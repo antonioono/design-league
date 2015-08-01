@@ -1,11 +1,8 @@
+$defaultCurve: cubic-bezier(0.19, 1, 0.22, 1);
 $intro-dur: 2s; // header bg
 
 @-webkit-keyframes fade-in {
     0% {
-        opacity: 0;
-    }
-
-    50% {
         opacity: 0;
     }
 
@@ -47,18 +44,13 @@ $intro-dur: 2s; // header bg
 
 @-webkit-keyframes slide-up {
     0% {
-        top: 5em;
+        top: 75vh;
         opacity: 0;
     }
-
-    75% {
-        top: 5em;
+    
+    75% { 
+        top: 75vh;
         opacity: 0;
-    }
-
-    95% {
-        top: -.125em;
-        opacity: 1;
     }
 
     100% {
@@ -88,36 +80,39 @@ $intro-dur: 2s; // header bg
 }
 
 body > header {
-    // -webkit-animation: fade-in-orange $intro-dur;
+//     -webkit-animation: fade-in-orange $intro-dur;
     
     .bg {
-        // -webkit-animation: fade-in-photo $intro-dur;
-        // -webkit-animation: fade-in $intro-dur;
+//         -webkit-animation: fade-in-photo $intro-dur;
+//         -webkit-animation: fade-in $intro-dur;
     }
     
     h2 {
-        -webkit-animation: fade-in $intro-dur* 2;
-        // -webkit-animation: slide-down $intro-dur;
+//         -webkit-animation: fade-in $intro-dur;
+//         -webkit-animation: slide-down $intro-dur;
+//         -webkit-animation-timing-function: $defaultCurve;
     }
     
     h1 {
         a{
-            position: relative;
-            -webkit-animation: slide-up $intro-dur;
+//             position: relative;
+//             -webkit-animation: slide-up $intro-dur;
+//             -webkit-animation-timing-function: $defaultCurve;
         }
     }
 }
 
 nav {
     // position: relative;
-    -webkit-animation: fade-in $intro-dur* 2;
+//     -webkit-animation: fade-in $intro-dur* 2;
 }
 
 form {
     // position: relative;
-    -webkit-animation: fade-in $intro-dur * 2;
+//     -webkit-animation: fade-in $intro-dur * 2;
 }
-.content article {
+.content article:first-of-type {
     position: relative;
     -webkit-animation: slide-up $intro-dur;
+    -webkit-animation-timing-function: $defaultCurve;
 }

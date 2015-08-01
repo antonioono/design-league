@@ -1,10 +1,10 @@
 @import "./_font-face.scss";
 
-$light-font:    "AkzidenzGroteskBE-Light";
-$regular:       "AkzidenzGroteskBE-Regular";
-$bold:          "AkzidenzGroteskBE-Bold";
-$medium:        "AkzidenzGroteskBE-Md";
-$italic:        "AkzidenzGroteskBE-It";
+$light-font:    "AkzidenzGroteskBE-Light", "Helvetica Neue";
+$regular:       "AkzidenzGroteskBE-Regular", "Helvetica Neue";
+$bold:          "AkzidenzGroteskBE-Bold", "Helvetica Neue";
+$medium:        "AkzidenzGroteskBE-Md", "Helvetica Neue";
+$italic:        "AkzidenzGroteskBE-It", "Helvetica Neue";
 
 @mixin small-caps($size: 1em) {
     text-transform: uppercase;

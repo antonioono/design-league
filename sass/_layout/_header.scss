@@ -1,7 +1,7 @@
 body {
 
     > header, nav {
-        z-index: 2;
+        z-index: 1;
         
         @media screen and (min-width: $breakpoint1) {
             opacity: .125;
@@ -18,12 +18,7 @@ body {
         }
     }
     
-    > header { 
-        
-        // @media screen and (min-width: $breakpoint1) {
-        //     top: 50%;
-        //     height: auto;
-        // }
+    > header {
 
         a {
             color: $accent !important;
@@ -47,13 +42,7 @@ body {
         h1.title {
             position: relative;              
             white-space: nowrap;            
-/*
-            $logoHeight: .4em;
-            background-image: url('../images/logo-breakpoint3.png');
-            background-repeat: no-repeat;
-            background-size: $logoHeight;
-            padding-top: $logoHeight + .25em;
-*/
+
             span.phrase { display: block; }
         
             @media screen and (min-width: $breakpoint1) {

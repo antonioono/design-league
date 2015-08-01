@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 15, ../sass/_globals/_type.scss */
 body {
-  font-family: "AkzidenzGroteskBE-Regular";
+  font-family: "AkzidenzGroteskBE-Regular", "Helvetica Neue";
   font-size: 11pt;
   line-height: 1.5em;
 }
@@ -111,12 +111,12 @@ body ::-moz-selection {
 }
 /* line 30, ../sass/_globals/_type.scss */
 body em {
-  font-family: "AkzidenzGroteskBE-It";
+  font-family: "AkzidenzGroteskBE-It", "Helvetica Neue";
   font-style: italic;
 }
 /* line 35, ../sass/_globals/_type.scss */
 body strong {
-  font-family: "AkzidenzGroteskBE-Bold";
+  font-family: "AkzidenzGroteskBE-Bold", "Helvetica Neue";
   font-weight: bold;
 }
 /* line 40, ../sass/_globals/_type.scss */
@@ -124,7 +124,7 @@ body .small-caps {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 1em;
-  font-family: "AkzidenzGroteskBE-Bold";
+  font-family: "AkzidenzGroteskBE-Bold", "Helvetica Neue";
   font-size: .75em;
 }
 /* line 47, ../sass/_globals/_type.scss */
@@ -134,7 +134,7 @@ body header h1,
 body header author {
   font-size: 16.25vw;
   line-height: 1em;
-  font-family: "AkzidenzGroteskBE-Light";
+  font-family: "AkzidenzGroteskBE-Light", "Helvetica Neue";
   letter-spacing: -.045em;
   text-transform: lowercase;
 }
@@ -151,21 +151,91 @@ body header author a:hover {
   body header > .contents > h1,
   body header h1,
   body header author {
-    font-family: "AkzidenzGroteskBE-Light";
+    font-family: "AkzidenzGroteskBE-Light", "Helvetica Neue";
     letter-spacing: -.045em;
     font-size: 8.647vw;
   }
 }
 /* line 70, ../sass/_globals/_type.scss */
 body header > h2, body header > .contents > h2 {
-  font-family: "AkzidenzGroteskBE-Bold";
+  font-family: "AkzidenzGroteskBE-Bold", "Helvetica Neue";
 }
 /* line 89, ../sass/_globals/_type.scss */
 body nav ul li h1 {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 0.75em;
-  font-family: "AkzidenzGroteskBE-Bold";
+  font-family: "AkzidenzGroteskBE-Bold", "Helvetica Neue";
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-photo {
+  0% {
+    -webkit-filter: grayscale(0.01);
+    opacity: 1;
+  }
+  50% {
+    -webkit-filter: grayscale(0.01);
+    opacity: 1;
+  }
+  100% {
+    -webkit-filter: grayscale(1);
+    opacity: .125;
+  }
+}
+@-webkit-keyframes fade-in-orange {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: #bf4900;
+  }
+}
+@-webkit-keyframes slide-up {
+  0% {
+    top: 75vh;
+    opacity: 0;
+  }
+  75% {
+    top: 75vh;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes slide-down {
+  0% {
+    top: -1em;
+    opacity: 0;
+  }
+  75% {
+    top: -1em;
+    opacity: 0;
+  }
+  95% {
+    top: .5em;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 114, ../sass/_globals/_animation.scss */
+.content article:first-of-type {
+  position: relative;
+  -webkit-animation: slide-up 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* line 1, ../sass/_layout/_base.scss */
@@ -183,11 +253,10 @@ body {
 }
 /* line 11, ../sass/_layout/_base.scss */
 body > .bg {
-  /*          content: ""; */
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
   background-size: cover;
   background-repeat: no-repeat;
   position: fixed;
@@ -195,38 +264,38 @@ body > .bg {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: .25;
+  opacity: 1;
   z-index: 0;
   -webkit-filter: grayscale(1);
 }
-/* line 25, ../sass/_layout/_base.scss */
+/* line 24, ../sass/_layout/_base.scss */
 body > .bg.muted {
   opacity: .05;
 }
-/* line 30, ../sass/_layout/_base.scss */
+/* line 29, ../sass/_layout/_base.scss */
 body a {
   color: #ff6000;
   text-decoration: none;
 }
-/* line 34, ../sass/_layout/_base.scss */
+/* line 33, ../sass/_layout/_base.scss */
 body a:hover {
   color: #bf4900;
 }
-/* line 40, ../sass/_layout/_base.scss */
+/* line 39, ../sass/_layout/_base.scss */
 body p,
 body article > ul li,
 body article > ol li {
   padding-bottom: 0.75em;
 }
-/* line 45, ../sass/_layout/_base.scss */
+/* line 44, ../sass/_layout/_base.scss */
 body p:last-child,
 body article > ul li:last-child,
 body article > ol li:last-child {
   padding-bottom: 0;
 }
-/* line 50, ../sass/_layout/_base.scss */
+/* line 49, ../sass/_layout/_base.scss */
 body .content {
-  z-index: 1;
+  z-index: 2;
   position: relative;
   -moz-transition: all 0.25s linear;
   -o-transition: all 0.25s linear;
@@ -234,20 +303,20 @@ body .content {
   transition: all 0.25s linear;
 }
 @media screen and (min-width: 32em) {
-  /* line 50, ../sass/_layout/_base.scss */
+  /* line 49, ../sass/_layout/_base.scss */
   body .content {
     top: 6rem;
   }
 }
-/* line 58, ../sass/_layout/_base.scss */
+/* line 57, ../sass/_layout/_base.scss */
 body .content.inactive {
-  opacity: .25;
+  opacity: .125;
   -webkit-filter: grayscale(1) brightness(2);
 }
 
 /* line 3, ../sass/_layout/_header.scss */
 body > header, body nav {
-  z-index: 2;
+  z-index: 1;
 }
 @media screen and (min-width: 32em) {
   /* line 3, ../sass/_layout/_header.scss */
@@ -271,43 +340,36 @@ body > header.rollover, body nav.rollover {
   opacity: 1;
   -webkit-filter: none;
 }
-/* line 28, ../sass/_layout/_header.scss */
+/* line 23, ../sass/_layout/_header.scss */
 body > header a {
   color: #ff6000 !important;
 }
-/* line 31, ../sass/_layout/_header.scss */
+/* line 26, ../sass/_layout/_header.scss */
 body > header a:hover {
   color: white;
   border-bottom: 1px white solid;
 }
-/* line 37, ../sass/_layout/_header.scss */
+/* line 32, ../sass/_layout/_header.scss */
 body > header a, body > header input {
   position: relative;
   z-index: 100;
   color: white;
 }
-/* line 43, ../sass/_layout/_header.scss */
+/* line 38, ../sass/_layout/_header.scss */
 body > header h1, body > header h2 {
   z-index: 2;
 }
-/* line 47, ../sass/_layout/_header.scss */
+/* line 42, ../sass/_layout/_header.scss */
 body > header h1.title {
   position: relative;
   white-space: nowrap;
-  /*
-              $logoHeight: .4em;
-              background-image: url('../images/logo-breakpoint3.png');
-              background-repeat: no-repeat;
-              background-size: $logoHeight;
-              padding-top: $logoHeight + .25em;
-  */
 }
-/* line 57, ../sass/_layout/_header.scss */
+/* line 46, ../sass/_layout/_header.scss */
 body > header h1.title span.phrase {
   display: block;
 }
 @media screen and (min-width: 32em) {
-  /* line 47, ../sass/_layout/_header.scss */
+  /* line 42, ../sass/_layout/_header.scss */
   body > header h1.title {
     /*
                     $logoWidth: .5em;
@@ -321,12 +383,12 @@ body > header h1.title span.phrase {
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 72, ../sass/_layout/_header.scss */
+  /* line 61, ../sass/_layout/_header.scss */
   body > header h1.title span.phrase {
     display: inline;
   }
 }
-/* line 76, ../sass/_layout/_header.scss */
+/* line 65, ../sass/_layout/_header.scss */
 body > header h2 {
   font-size: 1em;
   line-height: 1.5em;
@@ -334,70 +396,70 @@ body > header h2 {
   margin: 0 10.41667%;
 }
 @media screen and (min-width: 32em) {
-  /* line 76, ../sass/_layout/_header.scss */
+  /* line 65, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 76, ../sass/_layout/_header.scss */
+  /* line 65, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 76, ../sass/_layout/_header.scss */
+  /* line 65, ../sass/_layout/_header.scss */
   body > header h2 {
     margin-left: 52.08333%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 32em) {
-  /* line 76, ../sass/_layout/_header.scss */
+  /* line 65, ../sass/_layout/_header.scss */
   body > header h2 {
     display: none;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 76, ../sass/_layout/_header.scss */
+  /* line 65, ../sass/_layout/_header.scss */
   body > header h2 {
     white-space: nowrap;
   }
 }
-/* line 91, ../sass/_layout/_header.scss */
+/* line 80, ../sass/_layout/_header.scss */
 body > header .search {
   margin-top: 1.16667em;
 }
 @media screen and (max-width: 32em) {
-  /* line 91, ../sass/_layout/_header.scss */
+  /* line 80, ../sass/_layout/_header.scss */
   body > header .search {
     display: none;
   }
 }
 @media screen and (max-width: 48em) {
-  /* line 91, ../sass/_layout/_header.scss */
+  /* line 80, ../sass/_layout/_header.scss */
   body > header .search {
     margin: 0 10.41667%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 32em) {
-  /* line 91, ../sass/_layout/_header.scss */
+  /* line 80, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 48em) {
-  /* line 91, ../sass/_layout/_header.scss */
+  /* line 80, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 48em) and (min-width: 84em) {
-  /* line 91, ../sass/_layout/_header.scss */
+  /* line 80, ../sass/_layout/_header.scss */
   body > header .search {
     margin-left: 52.08333%;
     margin-right: 18.75%;
@@ -405,14 +467,14 @@ body > header .search {
 }
 
 @media screen and (min-width: 48em) {
-  /* line 91, ../sass/_layout/_header.scss */
+  /* line 80, ../sass/_layout/_header.scss */
   body > header .search {
     position: absolute;
     top: 1.5em;
     right: 2.08333%;
   }
 }
-/* line 108, ../sass/_layout/_header.scss */
+/* line 97, ../sass/_layout/_header.scss */
 body > header .search input {
   background: none;
   padding: 0;
@@ -423,7 +485,7 @@ body > header .search input {
   width: 9em;
   border-bottom: 1pt white solid;
   font-size: 1em;
-  font-family: "AkzidenzGroteskBE-Regular";
+  font-family: "AkzidenzGroteskBE-Regular", "Helvetica Neue";
   color: white;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -438,78 +500,78 @@ body > header .search input {
   -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-/* line 122, ../sass/_layout/_header.scss */
+/* line 111, ../sass/_layout/_header.scss */
 body > header .search input ::-webkit-input-placeholder
 ::-moz-input-placeholder
 ::-ms-input-placeholder
 ::input-placeholder {
   opacity: 1;
-  font-family: "AkzidenzGroteskBE-Regular";
+  font-family: "AkzidenzGroteskBE-Regular", "Helvetica Neue";
 }
-/* line 134, ../sass/_layout/_header.scss */
+/* line 123, ../sass/_layout/_header.scss */
 body > header .search input:hover {
   width: 10em;
 }
-/* line 138, ../sass/_layout/_header.scss */
+/* line 127, ../sass/_layout/_header.scss */
 body > header .search input:focus {
   border-bottom-color: #ff6000;
   width: 15em;
 }
 @media screen and (min-width: 48em) {
-  /* line 108, ../sass/_layout/_header.scss */
+  /* line 97, ../sass/_layout/_header.scss */
   body > header .search input {
     width: 6em;
   }
-  /* line 145, ../sass/_layout/_header.scss */
+  /* line 134, ../sass/_layout/_header.scss */
   body > header .search input:hover {
     width: 7.5em;
   }
-  /* line 146, ../sass/_layout/_header.scss */
+  /* line 135, ../sass/_layout/_header.scss */
   body > header .search input:focus {
     width: 10em;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 108, ../sass/_layout/_header.scss */
+  /* line 97, ../sass/_layout/_header.scss */
   body > header .search input {
     width: 9em;
   }
-  /* line 150, ../sass/_layout/_header.scss */
+  /* line 139, ../sass/_layout/_header.scss */
   body > header .search input:hover {
     width: 10em;
   }
-  /* line 151, ../sass/_layout/_header.scss */
+  /* line 140, ../sass/_layout/_header.scss */
   body > header .search input:focus {
     width: 15em;
   }
 }
-/* line 157, ../sass/_layout/_header.scss */
+/* line 146, ../sass/_layout/_header.scss */
 body nav {
   top: 0;
 }
 @media screen and (max-width: 32em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin: 0 10.41667%;
     margin-bottom: 6rem;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 32em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 35.41667%;
     margin-right: 10.41667%;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 48em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 43.75%;
     margin-right: 18.75%;
   }
 }
 @media screen and (max-width: 32em) and (min-width: 84em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 52.08333%;
     margin-right: 18.75%;
@@ -517,43 +579,43 @@ body nav {
 }
 
 @media screen and (min-width: 32em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 2.08333%;
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 43.75%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 157, ../sass/_layout/_header.scss */
+  /* line 146, ../sass/_layout/_header.scss */
   body nav {
     margin-left: 52.08333%;
   }
 }
-/* line 180, ../sass/_layout/_header.scss */
+/* line 169, ../sass/_layout/_header.scss */
 body nav ul li {
   margin-right: 2.08333%;
   margin-top: 0.375em;
 }
 @media screen and (min-width: 32em) {
-  /* line 180, ../sass/_layout/_header.scss */
+  /* line 169, ../sass/_layout/_header.scss */
   body nav ul li {
     display: inline-block;
     vertical-align: top;
     width: 31.25%;
   }
-  /* line 189, ../sass/_layout/_header.scss */
+  /* line 178, ../sass/_layout/_header.scss */
   body nav ul li:last-child {
     width: 29.16667%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 180, ../sass/_layout/_header.scss */
+  /* line 169, ../sass/_layout/_header.scss */
   body nav ul li {
     width: 22.91667%;
   }
