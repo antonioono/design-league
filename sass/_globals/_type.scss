@@ -1,13 +1,10 @@
 @import "./_font-face.scss";
 
-$light-font:    "AkzidenzGrotesk-Light";
-$semilight:     "AkzidenzGrotesk";
-$regular:       "AkzidenzGrotesk";
-$bold:          "AkzidenzGrotesk-Bold";
-$black:         "AkzidenzGrotesk-Black";
-$italic:        "Helvetica";
-
-$bodyRegular:   "BemboStd";
+$light-font:    "AkzidenzGroteskBE-Light";
+$regular:       "AkzidenzGroteskBE-Regular";
+$bold:          "AkzidenzGroteskBE-Bold";
+$medium:        "AkzidenzGroteskBE-Md";
+$italic:        "AkzidenzGroteskBE-It";
 
 @mixin small-caps($size: 1em) {
     text-transform: uppercase;
@@ -33,7 +30,6 @@ body {
     em {
         font-family: $italic;
         font-style: italic;
-        font-size: .95em;
     }
     
     strong {
@@ -55,7 +51,7 @@ body {
             font-size: 16.25vw;
             line-height: 1em;
             font-family: $light-font;
-            letter-spacing: -.025em;
+            letter-spacing: -.045em;
             text-transform: lowercase;
         
             a {
@@ -66,7 +62,7 @@ body {
                     
             @media screen and (min-width: $breakpoint2) {
                 font-family: $light-font;
-                letter-spacing: -.025em;
+                letter-spacing: -.045em;
                 font-size: 8.647vw;
             }
         }
@@ -92,7 +88,7 @@ body {
         
         h1 {
             @include small-caps(.75em);
-            font-family: $black;
+            font-family: $bold;
         }
     }
 }

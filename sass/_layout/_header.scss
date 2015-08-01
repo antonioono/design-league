@@ -116,7 +116,7 @@ body {
                 width: 9em;
                 border-bottom: 1pt white solid;
                 font-size: 1em;
-                font-family: $semilight;
+                font-family: $regular;
                 color: white;
         
                 ::-webkit-input-placeholder
@@ -124,7 +124,7 @@ body {
                     ::-ms-input-placeholder
                         ::input-placeholder {
                     opacity: 1;
-                    font-family: $semilight;
+                    font-family: $regular;
                 }
         
                 @include transition-property(all);

@@ -1,4 +1,4 @@
-/* line 17, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,168 +20,125 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 @font-face {
-  font-family: 'tazhair21';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazhair21_-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazhair21_-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazhair21_-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazhair21_-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazhair21_-webfont.svg#tazhair21") format("svg");
+  font-family: 'AkzidenzGroteskBE-Regular';
+  src: url("../fonts/AkzidenzGroteskBE-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Regular.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Regular.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Regular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Regular.svg#AkzidenzGroteskBE-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'tazregular';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazregular-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazregular-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazregular-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazregular-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazregular-webfont.svg#tazregular") format("svg");
+  font-family: 'AkzidenzGroteskBE-It';
+  src: url("../fonts/AkzidenzGroteskBE-It.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-It.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-It.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-It.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-It.svg#AkzidenzGroteskBE-It") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'tazbold';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbold-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbold-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbold-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbold-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbold-webfont.svg#tazbold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'tazbold_italic';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbolditalic-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbolditalic-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbolditalic-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazbolditalic-webfont.svg#tazbold_italic") format("svg");
+  font-family: 'AkzidenzGroteskBE-Bold';
+  src: url("../fonts/AkzidenzGroteskBE-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Bold.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Bold.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Bold.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Bold.svg#AkzidenzGroteskBE-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'tazitalic';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazitalic-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazitalic-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazitalic-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazitalic-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazitalic-webfont.svg#tazitalic") format("svg");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'tazlight';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazlight-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazlight-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazlight-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazlight-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazlight-webfont.svg#tazlight") format("svg");
+  font-family: 'AkzidenzGroteskBE-Light';
+  src: url("../fonts/AkzidenzGroteskBE-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Light.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Light.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Light.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Light.svg#AkzidenzGroteskBE-Light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'tazsemilight';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazsemilight-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazsemilight-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazsemilight-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazsemilight-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazsemilight-webfont.svg#tazsemilight") format("svg");
+  font-family: 'AkzidenzGroteskBE-Md';
+  src: url("../fonts/AkzidenzGroteskBE-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Md.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Md.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Md.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Md.svg#AkzidenzGroteskBE-Md") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: 'tazultralight';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralight-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralight-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralight-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralight-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralight-webfont.svg#tazultralight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'tazultralight_italic';
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralightitalic-webfont.eot");
-  src: url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralightitalic-webfont.woff") format("woff"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralightitalic-webfont.ttf") format("truetype"), url("https://dl.dropboxusercontent.com/u/17644651/fonts/tazultralightitalic-webfont.svg#tazultralight_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* line 18, ../sass/_globals/_type.scss */
+/* line 15, ../sass/_globals/_type.scss */
 body {
-  font-family: "AkzidenzGrotesk";
+  font-family: "AkzidenzGroteskBE-Regular";
   font-size: 11pt;
   line-height: 1.5em;
 }
-/* line 23, ../sass/_globals/_type.scss */
+/* line 20, ../sass/_globals/_type.scss */
 body ::selection {
   background: #ff6000;
   color: white;
 }
-/* line 28, ../sass/_globals/_type.scss */
+/* line 25, ../sass/_globals/_type.scss */
 body ::-moz-selection {
   background: #ff6000;
   color: white;
 }
-/* line 33, ../sass/_globals/_type.scss */
+/* line 30, ../sass/_globals/_type.scss */
 body em {
-  font-family: "Helvetica";
+  font-family: "AkzidenzGroteskBE-It";
   font-style: italic;
-  font-size: .95em;
 }
-/* line 39, ../sass/_globals/_type.scss */
+/* line 35, ../sass/_globals/_type.scss */
 body strong {
-  font-family: "AkzidenzGrotesk-Bold";
+  font-family: "AkzidenzGroteskBE-Bold";
   font-weight: bold;
 }
-/* line 44, ../sass/_globals/_type.scss */
+/* line 40, ../sass/_globals/_type.scss */
 body .small-caps {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 1em;
-  font-family: "AkzidenzGrotesk-Bold";
+  font-family: "AkzidenzGroteskBE-Bold";
   font-size: .75em;
 }
-/* line 54, ../sass/_globals/_type.scss */
+/* line 47, ../sass/_globals/_type.scss */
 body header > h1,
 body header > .contents > h1,
 body header h1,
 body header author {
   font-size: 16.25vw;
   line-height: 1em;
-  font-family: "AkzidenzGrotesk-Light";
-  letter-spacing: -.025em;
+  font-family: "AkzidenzGroteskBE-Light";
+  letter-spacing: -.045em;
   text-transform: lowercase;
 }
-/* line 62, ../sass/_globals/_type.scss */
+/* line 58, ../sass/_globals/_type.scss */
 body header > h1 a:hover,
 body header > .contents > h1 a:hover,
 body header h1 a:hover,
@@ -189,26 +146,26 @@ body header author a:hover {
   border: none !important;
 }
 @media screen and (min-width: 48em) {
-  /* line 54, ../sass/_globals/_type.scss */
+  /* line 47, ../sass/_globals/_type.scss */
   body header > h1,
   body header > .contents > h1,
   body header h1,
   body header author {
-    font-family: "AkzidenzGrotesk-Light";
-    letter-spacing: -.025em;
+    font-family: "AkzidenzGroteskBE-Light";
+    letter-spacing: -.045em;
     font-size: 8.647vw;
   }
 }
-/* line 74, ../sass/_globals/_type.scss */
+/* line 70, ../sass/_globals/_type.scss */
 body header > h2, body header > .contents > h2 {
-  font-family: "AkzidenzGrotesk-Bold";
+  font-family: "AkzidenzGroteskBE-Bold";
 }
-/* line 93, ../sass/_globals/_type.scss */
+/* line 89, ../sass/_globals/_type.scss */
 body nav ul li h1 {
   text-transform: uppercase;
   letter-spacing: .125em;
   font-size: 0.75em;
-  font-family: "AkzidenzGrotesk-Black";
+  font-family: "AkzidenzGroteskBE-Bold";
 }
 
 /* line 1, ../sass/_layout/_base.scss */
@@ -227,9 +184,9 @@ body {
 /* line 11, ../sass/_layout/_base.scss */
 body > .bg {
   /*          content: ""; */
-  -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -o-transition: all 0.25s ease-out;
+  -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
   background-size: cover;
   background-repeat: no-repeat;
@@ -238,7 +195,7 @@ body > .bg {
   width: 100%;
   top: 0;
   left: 0;
-  opacity: .5;
+  opacity: .25;
   z-index: 0;
   -webkit-filter: grayscale(1);
 }
@@ -255,7 +212,7 @@ body a {
 body a:hover {
   color: #bf4900;
 }
-/* line 42, ../sass/_layout/_base.scss */
+/* line 40, ../sass/_layout/_base.scss */
 body p,
 body article > ul li,
 body article > ol li {
@@ -271,9 +228,9 @@ body article > ol li:last-child {
 body .content {
   z-index: 1;
   position: relative;
-  -webkit-transition: all 0.25s linear;
   -moz-transition: all 0.25s linear;
   -o-transition: all 0.25s linear;
+  -webkit-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 @media screen and (min-width: 32em) {
@@ -299,14 +256,14 @@ body > header, body nav {
     position: fixed;
     bottom: 12.5vh;
     -webkit-filter: grayscale(1);
-    -webkit-transition-property: opacity, -webkit-filter;
     -moz-transition-property: opacity, -webkit-filter;
     -o-transition-property: opacity, -webkit-filter;
+    -webkit-transition-property: opacity, -webkit-filter;
     transition-property: opacity, -webkit-filter;
-    -webkit-transition: 0.25s linear;
-    -moz-transition: 0.25s linear;
-    -o-transition: 0.25s linear;
-    transition: 0.25s linear;
+    -moz-transition: linear 0.25s;
+    -o-transition: linear 0.25s;
+    -webkit-transition: linear 0.25s;
+    transition: linear 0.25s;
   }
 }
 /* line 15, ../sass/_layout/_header.scss */
@@ -446,6 +403,7 @@ body > header .search {
     margin-right: 18.75%;
   }
 }
+
 @media screen and (min-width: 48em) {
   /* line 91, ../sass/_layout/_header.scss */
   body > header .search {
@@ -465,28 +423,28 @@ body > header .search input {
   width: 9em;
   border-bottom: 1pt white solid;
   font-size: 1em;
-  font-family: "AkzidenzGrotesk";
+  font-family: "AkzidenzGroteskBE-Regular";
   color: white;
-  -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
+  -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   -o-transition-duration: 0.25s;
+  -webkit-transition-duration: 0.25s;
   transition-duration: 0.25s;
-  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
   -moz-transition-timing-function: cubic-bezier(1, 0, 0, 1);
   -o-transition-timing-function: cubic-bezier(1, 0, 0, 1);
+  -webkit-transition-timing-function: cubic-bezier(1, 0, 0, 1);
   transition-timing-function: cubic-bezier(1, 0, 0, 1);
 }
-/* line 125, ../sass/_layout/_header.scss */
+/* line 122, ../sass/_layout/_header.scss */
 body > header .search input ::-webkit-input-placeholder
 ::-moz-input-placeholder
 ::-ms-input-placeholder
 ::input-placeholder {
   opacity: 1;
-  font-family: "AkzidenzGrotesk";
+  font-family: "AkzidenzGroteskBE-Regular";
 }
 /* line 134, ../sass/_layout/_header.scss */
 body > header .search input:hover {
@@ -557,6 +515,7 @@ body nav {
     margin-right: 18.75%;
   }
 }
+
 @media screen and (min-width: 32em) {
   /* line 157, ../sass/_layout/_header.scss */
   body nav {
@@ -651,7 +610,7 @@ body article header time {
 }
 /* line 33, ../sass/_layout/_article.scss */
 body article header time a {
-  color: #aaaaaa;
+  color: #aaa;
 }
 /* line 36, ../sass/_layout/_article.scss */
 body article header time a:hover {
@@ -737,12 +696,12 @@ body article footer {
 }
 /* line 97, ../sass/_layout/_article.scss */
 body article footer ul.meta {
-  color: #aaaaaa;
+  color: #aaa;
   position: relative;
 }
 /* line 101, ../sass/_layout/_article.scss */
 body article footer ul.meta a {
-  color: #aaaaaa;
+  color: #aaa;
 }
 /* line 103, ../sass/_layout/_article.scss */
 body article footer ul.meta a:hover {
@@ -786,12 +745,12 @@ body article footer ul.meta > li.tags ul li {
 /* line 141, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li {
   display: block;
-  color: #cccccc;
+  color: #ccc;
   margin-bottom: 0.75em;
 }
 /* line 145, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li a {
-  color: #aaaaaa;
+  color: #aaa;
 }
 /* line 147, ../sass/_layout/_article.scss */
 body article footer ul.meta > li.notes li a:hover {
@@ -818,27 +777,27 @@ body article > figure iframe {
 body article img {
   height: auto !important;
 }
-/* line 180, ../sass/_layout/_article.scss */
+/* line 176, ../sass/_layout/_article.scss */
 body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
   margin-left: -13.88542%;
   width: 127.08333%;
 }
 @media screen and (min-width: 32em) {
-  /* line 180, ../sass/_layout/_article.scss */
+  /* line 176, ../sass/_layout/_article.scss */
   body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
     margin-left: 0;
     width: 119.0625%;
   }
 }
 @media screen and (min-width: 48em) {
-  /* line 180, ../sass/_layout/_article.scss */
+  /* line 176, ../sass/_layout/_article.scss */
   body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
     margin-left: 0;
     width: 150.625%;
   }
 }
 @media screen and (min-width: 84em) {
-  /* line 180, ../sass/_layout/_article.scss */
+  /* line 176, ../sass/_layout/_article.scss */
   body article.text img, body article.photo img, body article.video img, body article.audio img, body article.photoset img {
     margin-left: 0;
     width: 164.58333%;
@@ -851,7 +810,7 @@ body article ul {
 /* line 188, ../sass/_layout/_article.scss */
 body article ul li:before {
   content: "\2015";
-  color: #aaaaaa;
+  color: #aaa;
   position: absolute;
   margin-left: -1.5em;
 }
