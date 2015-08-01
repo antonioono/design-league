@@ -1,36 +1,51 @@
 body {
-    background: $very-light;
     text-rendering: optimizelegibility;
     overflow-x: hidden;
     max-width: 100%;
+    @include transition(background-color .5s $defaultCurve);
+    
+    &.focusContent {
+        background-color: white;
+    }
+    
+    &.focusHeader {
+        background-color: $accent;
+    }
     
     @media screen and (min-width: $breakpoint1) {
         max-width: 100vw;
     }
     
     > .bg {
-         @include transition(all .25s $defaultCurve);
+         @include transition(all .5s $defaultCurve);
          background-size: cover;
          background-repeat: no-repeat;
+//          background-image: none !important;
          position: fixed;
          height: 100%;
          width: 100%;
          top: 0;
          left: 0;
-         opacity: 1;
-         z-index: 0;
+         opacity: .125;
+         z-index: -999;
          -webkit-filter: grayscale(1);
          
          &.muted {
-             opacity: .05;
+             opacity: .125;
+             -webkit-filter: grayscale(1) blur(20px);
          }
     }
 
     a {
         color: $accent;
         text-decoration: none;
+        @include transition(color .25s $defaultCurve);
 
         &:hover {
+            color: $light-accent;
+        }
+        
+        &:active {
             color: $dark-accent;
         }
         
@@ -55,20 +70,24 @@ body {
         }
 
         &.inactive {
-            opacity: .125;
-            -webkit-filter: grayscale(1) brightness(2);
+            opacity: .25;
+            -webkit-filter: grayscale(1) invert(1);
+            z-index: 1;
+            a {
+                color: black !important;
+            }
         }
         
-        @include transition(all .25s linear);
+        @include transition(all .5s linear);
     }
     
-    // &.index {
-    //     
-    //     .content {
-    //         @media screen and (min-width: $breakpoint1) {
-    //             top: 66.66vh;
-    //         }
-    //     }
-    // }
+    &.index {
+        
+        .content {
+            @media screen and (min-width: $breakpoint1) {
+//                 top: 50vh;
+            }
+        }
+    }
 
 }

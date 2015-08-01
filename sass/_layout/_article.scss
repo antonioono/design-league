@@ -200,6 +200,7 @@ body {
     
         blockquote {
             padding-left: 1.5em;
+            margin-bottom: $leading/2;
             border-left: 1pt solid $accent;
         }
     }

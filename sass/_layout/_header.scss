@@ -4,35 +4,34 @@ body {
         z-index: 1;
         
         @media screen and (min-width: $breakpoint1) {
-            opacity: .125;
+            opacity: .25;
             position: fixed;
-            bottom: 12.5vh;
+            top: 66.6vh;
             -webkit-filter: grayscale(1);
             @include transition-property(opacity, -webkit-filter);
-            @include transition(.25s linear);
+            @include transition(.5s $defaultCurve);
         }
         
         &.rollover {
             opacity: 1;
             -webkit-filter: none;
+            z-index: 2;
+        }
+        
+        a {
+            color: white !important;
+            
+            &:hover {
+                color: $light-accent !important;
+            }
         }
     }
     
     > header {
 
-        a {
-            color: $accent !important;
-            
-            &:hover {
-                color: white;
-                border-bottom: 1px white solid;
-            }
-        }
-
         a, input {
             position: relative;
             z-index: 100;
-            color: white;
         }
         
         h1, h2 {

@@ -33,7 +33,7 @@ $(document).ready(function(){
         if (isPost) {
             focusHeader();
         } else { // Index
-            if ($(document).scrollTop() < 10) { // At top
+            if ($(document).scrollTop() < 1) { // At top
                 focusBoth()
             } else { // Not at top, default behavior
                 focusHeader();
@@ -45,7 +45,7 @@ $(document).ready(function(){
         if (isPost) {
             focusContent();
         } else { // Index
-            if ($(document).scrollTop() > 10) {
+            if ($(document).scrollTop() > 1) {
                 focusContent();
             }
         }
@@ -61,20 +61,20 @@ $(document).ready(function(){
         }
     });
     
+*/
     article.find("header h1").mouseenter(function() {
         focusContent()
     });
     
-    article.find("header h1").mouseout(function() {
-        if ($(document).screenTop() < 10) { // At top
+    article.find("header h1").mouseleave(function() {
+        if ($(window).scrollTop() < 1) { // At top
             focusHeader();
         }
     });
-*/
 
     $(document).on("scroll", function(){
         hasScrolled = true
-        if ($(document).scrollTop() > 0) { // Not at top
+        if ($(document).scrollTop() > 1) { // Not at top
             focusContent();
         } else { // At top
             focusHeader();
@@ -86,12 +86,16 @@ $(document).ready(function(){
         header.removeClass("rollover");
         content.removeClass("inactive");
         bg.addClass("muted");
+        $("body").addClass("focusContent");
+        $("body").removeClass("focusHeader");
     }
     
     function focusHeader() {
         header.addClass("rollover");
         content.addClass("inactive");
         bg.removeClass("muted");
+        $("body").addClass("focusHeader");
+        $("body").removeClass("focusContent");
     }
     
 });
