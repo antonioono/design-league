@@ -32,7 +32,7 @@ body {
          
          &.muted {
              opacity: .125;
-             -webkit-filter: grayscale(1) blur(20px);
+             -webkit-filter: grayscale(1); // blur(10px);
          }
     }
 
@@ -42,7 +42,7 @@ body {
         @include transition(color .25s $defaultCurve);
 
         &:hover {
-            color: $light-accent;
+            color: black;
         }
         
         &:active {
@@ -71,10 +71,12 @@ body {
 
         &.inactive {
             opacity: .25;
-            -webkit-filter: grayscale(1) invert(1);
+            -webkit-filter: grayscale(1);
             z-index: 1;
+            color: white;
+            
             a {
-                color: black !important;
+                color: white !important;
             }
         }
         

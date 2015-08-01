@@ -282,7 +282,7 @@ body > .bg {
 /* line 33, ../sass/_layout/_base.scss */
 body > .bg.muted {
   opacity: .125;
-  -webkit-filter: grayscale(1) blur(20px);
+  -webkit-filter: grayscale(1);
 }
 /* line 39, ../sass/_layout/_base.scss */
 body a {
@@ -295,7 +295,7 @@ body a {
 }
 /* line 44, ../sass/_layout/_base.scss */
 body a:hover {
-  color: #ffbb00;
+  color: black;
 }
 /* line 48, ../sass/_layout/_base.scss */
 body a:active {
@@ -331,12 +331,13 @@ body .content {
 /* line 72, ../sass/_layout/_base.scss */
 body .content.inactive {
   opacity: .25;
-  -webkit-filter: grayscale(1) invert(1);
+  -webkit-filter: grayscale(1);
   z-index: 1;
+  color: white;
 }
-/* line 76, ../sass/_layout/_base.scss */
+/* line 78, ../sass/_layout/_base.scss */
 body .content.inactive a {
-  color: black !important;
+  color: white !important;
 }
 
 /* line 3, ../sass/_layout/_header.scss */
@@ -372,7 +373,7 @@ body > header a, body nav a {
 }
 /* line 24, ../sass/_layout/_header.scss */
 body > header a:hover, body nav a:hover {
-  color: #ffbb00 !important;
+  color: black !important;
 }
 /* line 32, ../sass/_layout/_header.scss */
 body > header a, body > header input {
