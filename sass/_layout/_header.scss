@@ -6,7 +6,7 @@ body {
         @media screen and (min-width: $breakpoint1) {
             opacity: .25;
             position: fixed;
-            top: 66.6vh;
+            bottom: 25vh;
             -webkit-filter: grayscale(1);
             @include transition-property(opacity, -webkit-filter);
             @include transition(.5s $defaultCurve);

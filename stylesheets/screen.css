@@ -349,7 +349,7 @@ body > header, body nav {
   body > header, body nav {
     opacity: .25;
     position: fixed;
-    top: 66.6vh;
+    bottom: 25vh;
     -webkit-filter: grayscale(1);
     -moz-transition-property: opacity, -webkit-filter;
     -o-transition-property: opacity, -webkit-filter;
