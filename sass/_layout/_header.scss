@@ -47,18 +47,6 @@ body {
             white-space: nowrap;            
 
             span.phrase { display: block; }
-        
-            @media screen and (min-width: $breakpoint1) {
-/*
-                $logoWidth: .5em;
-                background-size: $logoWidth;
-                $offset: $logoWidth + .25em;    
-                padding-top: 0;                  
-                background-position: 0 .1875em;
-                padding-left: $offset;
-                left: -$offset;
-*/
-            }
             
             @media screen and (min-width: $breakpoint2) {
                 span.phrase { display: inline; }

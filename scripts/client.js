@@ -15,7 +15,6 @@ $(document).ready(function(){
     function setBackground() {
         var imageSrc    = $("body > .content > article .body img").eq(2).attr("src");
         bg.css("background-image", "url('"+imageSrc+"')");
-        console.log("url('" + imageSrc + "');");
     }
 
     focusHeader();
