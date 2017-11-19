@@ -4,7 +4,7 @@ article {
     position: relative;
     
     @media screen and (min-width: $breakpoint2) {
-        padding-top:    $vert-margin2;
+        padding-top:    0;
         padding-bottom: $vert-margin2;
     }
 

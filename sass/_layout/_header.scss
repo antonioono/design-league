@@ -6,7 +6,6 @@ body {
         @media screen and (min-width: $breakpoint1) {
             opacity: .25;
             position: fixed;
-            bottom: 25vh;
             -webkit-filter: grayscale(1);
             @include transition-property(opacity, -webkit-filter);
             @include transition(.5s $defaultCurve);
@@ -32,6 +31,7 @@ body {
     }
     
     > header {
+        bottom: 50vh;
 
         a, input {
             position: relative;
@@ -46,10 +46,14 @@ body {
             position: relative;              
             white-space: nowrap;            
 
-            span.phrase { display: block; }
+            span.phrase {
+	            display: block;
+            }
             
             @media screen and (min-width: $breakpoint2) {
-                span.phrase { display: inline; }
+                span.phrase {
+	                display: inline;
+                }
             }
         }
         
