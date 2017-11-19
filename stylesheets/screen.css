@@ -65,31 +65,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: 'AkzidenzGroteskBE-Regular';
-  src: url("../fonts/AkzidenzGroteskBE-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Regular.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Regular.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Regular.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Regular.svg#AkzidenzGroteskBE-Regular") format("svg");
+  src: url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Regular.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Regular.otf") format("opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Regular.woff") format("woff"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Regular.ttf") format("truetype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Regular.svg#AkzidenzGroteskBE-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AkzidenzGroteskBE-It';
-  src: url("../fonts/AkzidenzGroteskBE-It.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-It.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-It.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-It.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-It.svg#AkzidenzGroteskBE-It") format("svg");
+  src: url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-It.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-It.otf") format("opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-It.woff") format("woff"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-It.ttf") format("truetype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-It.svg#AkzidenzGroteskBE-It") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AkzidenzGroteskBE-Bold';
-  src: url("../fonts/AkzidenzGroteskBE-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Bold.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Bold.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Bold.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Bold.svg#AkzidenzGroteskBE-Bold") format("svg");
+  src: url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Bold.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Bold.otf") format("opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Bold.woff") format("woff"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Bold.ttf") format("truetype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Bold.svg#AkzidenzGroteskBE-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AkzidenzGroteskBE-Light';
-  src: url("../fonts/AkzidenzGroteskBE-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Light.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Light.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Light.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Light.svg#AkzidenzGroteskBE-Light") format("svg");
+  src: url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Light.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Light.otf") format("opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Light.woff") format("woff"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Light.ttf") format("truetype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Light.svg#AkzidenzGroteskBE-Light") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'AkzidenzGroteskBE-Md';
-  src: url("../fonts/AkzidenzGroteskBE-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/AkzidenzGroteskBE-Md.otf") format("opentype"), url("../fonts/AkzidenzGroteskBE-Md.woff") format("woff"), url("../fonts/AkzidenzGroteskBE-Md.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBE-Md.svg#AkzidenzGroteskBE-Md") format("svg");
+  src: url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Md.eot?#iefix") format("embedded-opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Md.otf") format("opentype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Md.woff") format("woff"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Md.ttf") format("truetype"), url("https://s3.amazonaws.com/designleague/fonts/AkzidenzGroteskBE-Md.svg#AkzidenzGroteskBE-Md") format("svg");
   font-weight: normal;
   font-style: normal;
 }
