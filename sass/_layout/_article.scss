@@ -1,207 +1,205 @@
-body {
-    article {
-        padding-top:    $vert-margin1;
-        padding-bottom: $vert-margin1;
-        position: relative;
+article {
+    padding-top:    $vert-margin1;
+    padding-bottom: $vert-margin1;
+    position: relative;
+    
+    @media screen and (min-width: $breakpoint2) {
+        padding-top:    $vert-margin2;
+        padding-bottom: $vert-margin2;
+    }
+
+    h1 {
+        margin-bottom: $baseline / 2;
         
+        @media screen and (min-width: $breakpoint1) {
+            // width: 100% + $col + $gutter;
+        }
         @media screen and (min-width: $breakpoint2) {
-            padding-top:    $vert-margin2;
-            padding-bottom: $vert-margin2;
+            // width: 100% + $col2;
         }
-    
-        h1 {
-            margin-bottom: $baseline / 2;
-            
-            @media screen and (min-width: $breakpoint1) {
-                // width: 100% + $col + $gutter;
-            }
-            @media screen and (min-width: $breakpoint2) {
-                // width: 100% + $col2;
-            }
-            @media screen and (min-width: $breakpoint3) {
-                // width: 100% + $col2;
-            }
+        @media screen and (min-width: $breakpoint3) {
+            // width: 100% + $col2;
         }
-    
-        header {
-            position: relative;
-                               
-            time {
-                @include small-caps(.75em);
-                @include contentPosition;
-                
-                a {
-                    color: $light;
-                    
-                    &:hover {
-                        color: $accent;
-                    }
-                }
-            }
-            
-            h1 {
-            }
-            
-            author {
-                display: none;
-    
-                a {
-                    background-size: 100% 100%;
-                    background-repeat: no-repeat;
-                    display: inline-block;
-                    text-indent: -9999em;
-                    border-radius: 50%;
-                    
-                    
-                    height: .333em;
-                    width: .333em;
-                }
-    
-                @media screen and (min-width: $breakpoint1) {
-                    display: block;
-                    position: absolute;
-                    left: -.875em;
-                    top: .55em;
+    }
 
-                    a {
-                        height: .666em;
-                        width:  .666em;
-                    }
-                }
-    
-                @media screen and (min-width: $breakpoint2) {
-    
-                    a {
-
-                    }
-                }
+    header {
+        position: relative;
+                           
+        time {
+            @include small-caps(.75em);
+            @include contentPosition;
+            
+            a {
+                color: $light;
                 
-                @media screen and (min-width: $breakpoint3) {
-                
-                    a {
-                        // left:   -6.5em;
-                        // width:   4.5em;
-                        // height:  4.5em;
-                    }
+                &:hover {
+                    color: $accent;
                 }
             }
         }
         
-        section.body {
-            @include contentPosition;
+        h1 {
         }
-    
-        footer {
-            @include contentPosition;
-    
-            ul.meta {
-                color: $light;
-                position: relative;
-    
+        
+        author {
+            display: none;
+
+            a {
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+                text-indent: -9999em;
+                border-radius: 50%;
+                
+                
+                height: .333em;
+                width: .333em;
+            }
+
+            @media screen and (min-width: $breakpoint1) {
+                display: block;
+                position: absolute;
+                left: -.875em;
+                top: .55em;
+
                 a {
-                    color: $light;
-                    &:hover { color: $accent; }
+                    height: .666em;
+                    width:  .666em;
                 }
-    
-                li:before {
-                    content: none;
+            }
+
+            @media screen and (min-width: $breakpoint2) {
+
+                a {
+
                 }
+            }
+            
+            @media screen and (min-width: $breakpoint3) {
+            
+                a {
+                    // left:   -6.5em;
+                    // width:   4.5em;
+                    // height:  4.5em;
+                }
+            }
+        }
+    }
     
-                > li {
-                    margin-top: $leading / 2;
-                    display: block;
+    section.body {
+        @include contentPosition;
+    }
+
+    footer {
+        @include contentPosition;
+
+        ul.meta {
+            color: $light;
+            position: relative;
+
+            a {
+                color: $light;
+                &:hover { color: $accent; }
+            }
+
+            li:before {
+                content: none;
+            }
+
+            > li {
+                margin-top: $leading / 2;
+                display: block;
+                
+                @media screen and (min-width: $breakpoint1) {
+                    margin-left: 0;
                     
-                    @media screen and (min-width: $breakpoint1) {
-                        margin-left: 0;
-                        
-                        h2 {
-                            position: absolute;
-                            width: 5em;
-                            left: -5.75em;
-                            line-height: 2.25em;
-                            text-align: right
-                        }
-                    }
-    
                     h2 {
-                        @include small-caps(.75em);
+                        position: absolute;
+                        width: 5em;
+                        left: -5.75em;
+                        line-height: 2.25em;
+                        text-align: right
                     }
-    
-                    &.tags {
-                        ul {
-                            li {
-                                text-transform: lowercase;
-                                display: inline-block;
-                                padding-right: .5em;
-                            }
-                        }
-                    }
-    
-                    &.notes {
+                }
+
+                h2 {
+                    @include small-caps(.75em);
+                }
+
+                &.tags {
+                    ul {
                         li {
-                            display: block;
-                            color: $med-light;
-                            margin-bottom: $leading / 2;
-                            a {
-                                color: $light;
-                                &:hover { color: $accent; }
-                            }
-                            img {
-                                display: none;
-                            }
+                            text-transform: lowercase;
+                            display: inline-block;
+                            padding-right: .5em;
+                        }
+                    }
+                }
+
+                &.notes {
+                    li {
+                        display: block;
+                        color: $med-light;
+                        margin-bottom: $leading / 2;
+                        a {
+                            color: $light;
+                            &:hover { color: $accent; }
+                        }
+                        img {
+                            display: none;
                         }
                     }
                 }
             }
         }
-    
-        > figure {
-            padding-bottom: 0;
-    
-            figcaption {
-                margin-bottom: $leading;
-            }
-    
-            iframe {
-                // width: 100% + $gutter * 2 !important;
-                margin-left: -$gutter;
-                height: auto  !important;
-            }
+    }
+
+    > figure {
+        padding-bottom: 0;
+
+        figcaption {
+            margin-bottom: $leading;
         }
-    
-        img {
-            height: auto !important; // many images already in the blog have a hardcoded height
+
+        iframe {
+            // width: 100% + $gutter * 2 !important;
+            margin-left: -$gutter;
+            height: auto  !important;
         }
-    
-        &.text  img,
-        &.photo img, 
-        &.video img,
-        &.audio img,
-        &.photoset img {
-            @include imageWidth;
-        }
-    
-        ul {
-            list-style-type: none;
-    
-            li {
-                &:before {
-                    content: "\2015";
-                    color: $light;
-                    position: absolute;
-                    margin-left: -1.5em;
-                    
-                    @media screen and (max-width: $breakpoint1) {
-                        margin-left: -1em;
-                    }
+    }
+
+    img {
+        height: auto !important; // many images already in the blog have a hardcoded height
+    }
+
+    &.text  img,
+    &.photo img, 
+    &.video img,
+    &.audio img,
+    &.photoset img {
+        @include imageWidth;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            &:before {
+                content: "\2015";
+                color: $light;
+                position: absolute;
+                margin-left: -1.5em;
+                
+                @media screen and (max-width: $breakpoint1) {
+                    margin-left: -1em;
                 }
             }
         }
-    
-        blockquote {
-            padding-left: 1.5em;
-            margin-bottom: $leading/2;
-            border-left: 1pt solid $accent;
-        }
+    }
+
+    blockquote {
+        padding-left: 1.5em;
+        margin-bottom: $leading/2;
+        border-left: 1pt solid $accent;
     }
 }

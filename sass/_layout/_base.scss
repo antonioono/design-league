@@ -20,14 +20,14 @@ body {
          @include transition(all .5s $defaultCurve);
          background-size: cover;
          background-repeat: no-repeat;
-//          background-image: none !important;
          position: fixed;
          height: 100%;
          width: 100%;
          top: 0;
          left: 0;
-         opacity: .125;
+         opacity: .5;
          z-index: -999;
+         mix-blend-mode: multiply;
          -webkit-filter: grayscale(1);
          
          &.muted {
@@ -66,7 +66,7 @@ body {
         position: relative;
         
         @media screen and (min-width: $breakpoint1) {
-            top: $baseline * 4;
+            top: 50vh;
         }
 
         &.inactive {
@@ -78,18 +78,13 @@ body {
             a {
                 color: white !important;
             }
+            
+            img {
+                mix-blend-mode: multiply;
+                -webkit-filter: grayscale(1);
+            }
         }
         
         @include transition(all .5s linear);
     }
-    
-    &.index {
-        
-        .content {
-            @media screen and (min-width: $breakpoint1) {
-//                 top: 50vh;
-            }
-        }
-    }
-
 }

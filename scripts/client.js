@@ -22,46 +22,6 @@ $(document).ready(function(){
     
     if (isIndex) content.removeClass("inactive");
        
-/*
-    setTimeout(function() {
-        focusContent();
-    }, 3000);
-*/
-    
-/*
-    headerLink.mouseenter(function() {
-        if (isPost) {
-            focusHeader();
-        } else { // Index
-            if ($(document).scrollTop() < 1) { // At top
-                focusBoth()
-            } else { // Not at top, default behavior
-                focusHeader();
-            }
-        }
-    });
-    
-    headerLink.mouseout(function() {
-        if (isPost) {
-            focusContent();
-        } else { // Index
-            if ($(document).scrollTop() > 1) {
-                focusContent();
-            }
-        }
-    });
-    
-    article.mouseenter(function() {
-        if (isPost) {
-            focusContent();
-        } else {
-            if (hasScrolled) {
-                focusContent();
-            }
-        }
-    });
-    
-*/
     article.find("header h1").mouseenter(function() {
         focusContent()
     });
